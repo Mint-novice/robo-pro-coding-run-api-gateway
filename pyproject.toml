@@ -1,0 +1,41 @@
+﻿[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robo-pro-coding-run-api-gateway"
+version = "0.1.0"
+description = "Fischertechnik ROBO Pro Coding (.ft) project toolkit + app bridge"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+license-files = ["LICENSE", "NOTICE.md"]
+authors = [{ name = "ftg contributors" }]
+keywords = ["fischertechnik", "robotics", "blockly", "education", "txt"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Education",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-name/robo-pro-coding-run-api-gateway"
+Issues = "https://github.com/your-name/robo-pro-coding-run-api-gateway/issues"
+
+[project.scripts]
+ftg = "ftgateway.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"ftgateway.data" = ["*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

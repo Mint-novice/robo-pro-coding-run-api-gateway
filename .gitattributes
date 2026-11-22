@@ -1,0 +1,13 @@
+# Normalise line endings: the .ft format and generated sources are LF.
+* text=auto eol=lf
+
+# Windows-only scripts keep CRLF so powershell.exe is happy.
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary / container formats
+*.ft binary
+*.png binary
+*.jpg binary
+*.ico binary

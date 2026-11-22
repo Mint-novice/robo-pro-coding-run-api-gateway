@@ -1,0 +1,45 @@
+# MIT License（仅覆盖本项目自写代码与文档）
+
+Copyright (c) 2026 Mint-novice
+
+本许可证适用于本仓库中**由本项目作者编写**的内容：
+
+- `src/ftgateway/` 中的 Python 实现（`project.py`、`blocks.py`、`verify.py`、`cli.py`）
+- `bridge/` 中的脚本（修改、截图、注入、导出工具）
+- `tests/`、`examples/`（本项目自行生成并校验的示例工程）
+- `docs/`、`README.md`、`README.zh-CN.md`、`AGENTS.md`、`skills/`（提示与文档）
+- `pyproject.toml`、`.github/workflows/`、`.gitignore`
+
+**不适用**于下列内容，其权利归各自权利人：
+
+- `src/ftgateway/data/block-catalog.json`、`block-schema.json` 中从官方软件导出的事实性元数据
+  （块类型标识、输入名、字段名），以及其中可能包含的界面文案；
+- Blockly 框架本身（Apache-2.0，© Google LLC）；
+- 产品名称、商标、界面外观、图标、字体：「fischertechnik」「ROBO Pro Coding」「TXT」等归
+  fischertechnik GmbH / beemo GmbH 所有；
+- 任何人使用本工具生成的 `.ft` 工程里所引用的第三方内容。
+
+本项目**不包含**官方软件本体、安装包、二进制、固件、素材或语言包。数据文件的来源与使用条件
+见 [NOTICE.md](NOTICE.md)。
+
+---
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -1,0 +1,10317 @@
+{
+ "source": "ROBO Pro Coding in-process Blockly registry",
+ "generatedAt": "2026-11-22T12:43:34.120Z",
+ "total": 314,
+ "blocks": [
+  {
+   "type": "colour_picker",
+   "title": "#f00",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "COLOUR",
+     "cls": "Qc",
+     "value": "#ff0000"
+    }
+   ],
+   "code": "'#ff0000'"
+  },
+  {
+   "type": "colour_random",
+   "title": "random colour",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "random colour"
+    }
+   ],
+   "code": "'#%06x' % random.randint(0, 2**24 - 1)"
+  },
+  {
+   "type": "colour_rgb",
+   "title": "colour with red ? green ? blue ?",
+   "inputs": [
+    {
+     "name": "RED",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "GREEN",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "BLUE",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "colour with red"
+    },
+    {
+     "cls": "w3",
+     "value": "green"
+    },
+    {
+     "cls": "w3",
+     "value": "blue"
+    }
+   ],
+   "code": "colour_rgb(0, 0, 0)"
+  },
+  {
+   "type": "colour_blend",
+   "title": "blend colour 1 ? colour 2 ? ratio ?",
+   "inputs": [
+    {
+     "name": "COLOUR1",
+     "type": 1,
+     "check": [
+      "Colour"
+     ]
+    },
+    {
+     "name": "COLOUR2",
+     "type": 1,
+     "check": [
+      "Colour"
+     ]
+    },
+    {
+     "name": "RATIO",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "blend colour 1"
+    },
+    {
+     "cls": "w3",
+     "value": "colour 2"
+    },
+    {
+     "cls": "w3",
+     "value": "ratio"
+    }
+   ],
+   "code": "colour_blend('#000000', '#000000', 0)"
+  },
+  {
+   "type": "lists_create_empty",
+   "title": "create empty list",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "create empty list"
+    }
+   ],
+   "code": "[]"
+  },
+  {
+   "type": "lists_repeat",
+   "title": "create list with item ? repeated ? times",
+   "inputs": [
+    {
+     "name": "ITEM",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "NUM",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "create list with item"
+    },
+    {
+     "cls": "w3",
+     "value": "repeated"
+    },
+    {
+     "cls": "w3",
+     "value": "times"
+    }
+   ],
+   "code": "[None] * 0"
+  },
+  {
+   "type": "lists_reverse",
+   "title": "reverse ?",
+   "inputs": [
+    {
+     "name": "LIST",
+     "type": 1,
+     "check": [
+      "Array"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "reverse"
+    }
+   ],
+   "code": "list(reversed([]))"
+  },
+  {
+   "type": "lists_isEmpty",
+   "title": "? is empty",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "type": 1,
+     "check": [
+      "String",
+      "Array"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "is empty"
+    }
+   ],
+   "code": "not len([])"
+  },
+  {
+   "type": "lists_length",
+   "title": "length of ?",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "type": 1,
+     "check": [
+      "String",
+      "Array"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "length of"
+    }
+   ],
+   "code": "len([])"
+  },
+  {
+   "type": "lists_create_with_container",
+   "title": "list ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "STACK",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "list"
+    }
+   ],
+   "codeErr": "Language \"Python\" does not know how to generate code for block type \"lists_creat"
+  },
+  {
+   "type": "lists_create_with_item",
+   "title": "item",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "item"
+    }
+   ],
+   "codeErr": "Language \"Python\" does not know how to generate code for block type \"lists_creat"
+  },
+  {
+   "type": "lists_indexOf",
+   "title": "in list ? find first occurrence of item ?",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "type": 1,
+     "check": [
+      "Array"
+     ]
+    },
+    {
+     "name": "FIND",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "in list"
+    },
+    {
+     "cls": "w3",
+     "value": "find"
+    },
+    {
+     "name": "END",
+     "cls": "zc",
+     "value": "FIRST"
+    },
+    {
+     "cls": "w3",
+     "value": "occurrence of item"
+    }
+   ],
+   "code": "first_index('', [])"
+  },
+  {
+   "type": "lists_getIndex",
+   "title": "in list ? get # ?",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "type": 1,
+     "check": [
+      "Array"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "AT",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "in list"
+    },
+    {
+     "name": "MODE",
+     "cls": "zc",
+     "value": "GET"
+    },
+    {
+     "name": "SPACE",
+     "cls": "w3",
+     "value": ""
+    },
+    {
+     "name": "WHERE",
+     "cls": "zc",
+     "value": "FROM_START"
+    }
+   ],
+   "code": "[][0]"
+  },
+  {
+   "type": "lists_setIndex",
+   "title": "in list ? set # ? as ?",
+   "inputs": [
+    {
+     "name": "LIST",
+     "type": 1,
+     "check": [
+      "Array"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "AT",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "TO",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "in list"
+    },
+    {
+     "name": "MODE",
+     "cls": "zc",
+     "value": "SET"
+    },
+    {
+     "name": "SPACE",
+     "cls": "w3",
+     "value": ""
+    },
+    {
+     "name": "WHERE",
+     "cls": "zc",
+     "value": "FROM_START"
+    },
+    {
+     "cls": "w3",
+     "value": "as"
+    }
+   ],
+   "code": "<highlight>'dwV(@lhC|^S?l[}C-.cF'</highlight>[][0] = None\n"
+  },
+  {
+   "type": "lists_getSublist",
+   "title": "in list ? get sub-list from # ? to # ?",
+   "inputs": [
+    {
+     "name": "LIST",
+     "type": 1,
+     "check": [
+      "Array"
+     ]
+    },
+    {
+     "name": "AT1",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "AT2",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "in list"
+    },
+    {
+     "cls": "w3",
+     "value": "get sub-list from"
+    },
+    {
+     "name": "WHERE1",
+     "cls": "zc",
+     "value": "FROM_START"
+    },
+    {
+     "cls": "w3",
+     "value": "to"
+    },
+    {
+     "name": "WHERE2",
+     "cls": "zc",
+     "value": "FROM_START"
+    }
+   ],
+   "code": "[][ : 1]"
+  },
+  {
+   "type": "lists_sort",
+   "title": "sort numeric ascending ?",
+   "inputs": [
+    {
+     "name": "LIST",
+     "type": 1,
+     "check": [
+      "Array"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "sort"
+    },
+    {
+     "name": "TYPE",
+     "cls": "zc",
+     "value": "NUMERIC"
+    },
+    {
+     "name": "DIRECTION",
+     "cls": "zc",
+     "value": "1"
+    }
+   ],
+   "code": "lists_sort([], \"NUMERIC\", False)"
+  },
+  {
+   "type": "lists_split",
+   "title": "make list from text ? with delimiter ?",
+   "inputs": [
+    {
+     "name": "INPUT",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "DELIM",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "make"
+    },
+    {
+     "name": "MODE",
+     "cls": "zc",
+     "value": "SPLIT"
+    },
+    {
+     "cls": "w3",
+     "value": "with delimiter"
+    }
+   ],
+   "code": "''.split()"
+  },
+  {
+   "type": "logic_boolean",
+   "title": "true",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "BOOL",
+     "cls": "zc",
+     "value": "TRUE"
+    }
+   ],
+   "code": "True"
+  },
+  {
+   "type": "controls_if",
+   "title": "if ? do ?",
+   "inputs": [
+    {
+     "name": "IF0",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    },
+    {
+     "name": "DO0",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "PLUS",
+     "cls": "Yh",
+     "value": "data:image/svg+xml;base64,PHN2ZyB4bWxucz"
+    },
+    {
+     "cls": "w3",
+     "value": "if"
+    },
+    {
+     "cls": "w3",
+     "value": "do"
+    }
+   ],
+   "code": "<highlight>'x65q;1`MphQ8]S*.0u!F'</highlight>if False:\n  pass\n"
+  },
+  {
+   "type": "controls_ifelse",
+   "title": "if ? do ? else ?",
+   "inputs": [
+    {
+     "name": "IF0",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    },
+    {
+     "name": "DO0",
+     "type": 3,
+     "check": null
+    },
+    {
+     "name": "ELSE",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "if"
+    },
+    {
+     "cls": "w3",
+     "value": "do"
+    },
+    {
+     "cls": "w3",
+     "value": "else"
+    }
+   ],
+   "code": "<highlight>']hQzWmBGBLhc=j]C=EQb'</highlight>if False:\n  pass\nelse:\n  pass\n"
+  },
+  {
+   "type": "logic_compare",
+   "title": "? = ?",
+   "inputs": [
+    {
+     "name": "A",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "B",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "OP",
+     "cls": "zc",
+     "value": "EQ"
+    }
+   ],
+   "code": "0 == 0"
+  },
+  {
+   "type": "logic_operation",
+   "title": "? and ?",
+   "inputs": [
+    {
+     "name": "A",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    },
+    {
+     "name": "B",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "OP",
+     "cls": "zc",
+     "value": "AND"
+    }
+   ],
+   "code": "False and False"
+  },
+  {
+   "type": "logic_negate",
+   "title": "not ?",
+   "inputs": [
+    {
+     "name": "BOOL",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "not"
+    }
+   ],
+   "code": "not True"
+  },
+  {
+   "type": "logic_null",
+   "title": "无",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "无"
+    }
+   ],
+   "code": "None"
+  },
+  {
+   "type": "logic_ternary",
+   "title": "test ? if true ? if false ?",
+   "inputs": [
+    {
+     "name": "IF",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    },
+    {
+     "name": "THEN",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "ELSE",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "test"
+    },
+    {
+     "cls": "w3",
+     "value": "if true"
+    },
+    {
+     "cls": "w3",
+     "value": "if false"
+    }
+   ],
+   "code": "None if False else None"
+  },
+  {
+   "type": "controls_if_if",
+   "title": "if",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "if"
+    }
+   ],
+   "codeErr": "Language \"Python\" does not know how to generate code for block type \"controls_if"
+  },
+  {
+   "type": "controls_if_elseif",
+   "title": "else if",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "else if"
+    }
+   ],
+   "codeErr": "Language \"Python\" does not know how to generate code for block type \"controls_if"
+  },
+  {
+   "type": "controls_if_else",
+   "title": "else",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "else"
+    }
+   ],
+   "codeErr": "Language \"Python\" does not know how to generate code for block type \"controls_if"
+  },
+  {
+   "type": "controls_repeat_ext",
+   "title": "repeat ? times do ?",
+   "inputs": [
+    {
+     "name": "TIMES",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "DO",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "repeat"
+    },
+    {
+     "cls": "w3",
+     "value": "times"
+    },
+    {
+     "cls": "w3",
+     "value": "do"
+    }
+   ],
+   "code": "<highlight>':92abr{02GS1GTa;rZyZ'</highlight>for count in range(0):\n  pass\n"
+  },
+  {
+   "type": "controls_repeat",
+   "title": "repeat 10 times do ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "DO",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "repeat"
+    },
+    {
+     "name": "TIMES",
+     "cls": "wE",
+     "value": "10"
+    },
+    {
+     "cls": "w3",
+     "value": "times"
+    },
+    {
+     "cls": "w3",
+     "value": "do"
+    }
+   ],
+   "code": "<highlight>'r2Tx0;Dd`aq9n}M?e2(`'</highlight>for count2 in range(10):\n  pass\n"
+  },
+  {
+   "type": "controls_whileUntil",
+   "title": "repeat while ? do ?",
+   "inputs": [
+    {
+     "name": "BOOL",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    },
+    {
+     "name": "DO",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "repeat"
+    },
+    {
+     "name": "MODE",
+     "cls": "zc",
+     "value": "WHILE"
+    },
+    {
+     "cls": "w3",
+     "value": "do"
+    }
+   ],
+   "code": "<highlight>'u}KaTgX62dxwf.KY6ki3'</highlight>while False:\n  pass\n"
+  },
+  {
+   "type": "controls_for",
+   "title": "count with i from ? to ? by ? do ?",
+   "inputs": [
+    {
+     "name": "FROM",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "TO",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "BY",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "DO",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "count with"
+    },
+    {
+     "name": "VAR",
+     "cls": "PE",
+     "value": ",%ysBuNg|`TuxCq|`Mlx"
+    },
+    {
+     "cls": "w3",
+     "value": "from"
+    },
+    {
+     "cls": "w3",
+     "value": "to"
+    },
+    {
+     "cls": "w3",
+     "value": "by"
+    },
+    {
+     "cls": "w3",
+     "value": "do"
+    }
+   ],
+   "code": "<highlight>'V],G}*acl`Vfsd8$X6CT'</highlight>for i in range(1):\n  pass\n"
+  },
+  {
+   "type": "controls_forEach",
+   "title": "for each item j in list ? do ?",
+   "inputs": [
+    {
+     "name": "LIST",
+     "type": 1,
+     "check": [
+      "Array"
+     ]
+    },
+    {
+     "name": "DO",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "for each item"
+    },
+    {
+     "name": "VAR",
+     "cls": "PE",
+     "value": "MgGu`fDjGi6jb%qA_S3V"
+    },
+    {
+     "cls": "w3",
+     "value": "in list"
+    },
+    {
+     "cls": "w3",
+     "value": "do"
+    }
+   ],
+   "code": "<highlight>'MVhq2_ve9cDy^HeAFP?*'</highlight>for j in []:\n  pass\n"
+  },
+  {
+   "type": "controls_flow_statements",
+   "title": "break out of loop",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "FLOW",
+     "cls": "zc",
+     "value": "BREAK"
+    },
+    {
+     "cls": "w3",
+     "value": "of loop"
+    }
+   ],
+   "code": "<highlight>'t6/]_Q(QmNdYKCOYd0o6'</highlight><highlight>'t6/]_Q(QmNdYKCOYd0o6'</highlight>break\n"
+  },
+  {
+   "type": "math_number",
+   "title": "0",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "NUM",
+     "cls": "wE",
+     "value": "0"
+    }
+   ],
+   "code": "0"
+  },
+  {
+   "type": "math_arithmetic",
+   "title": "? + ?",
+   "inputs": [
+    {
+     "name": "A",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "B",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "OP",
+     "cls": "zc",
+     "value": "ADD"
+    }
+   ],
+   "code": "0 + 0"
+  },
+  {
+   "type": "math_single",
+   "title": "平方 ?",
+   "inputs": [
+    {
+     "name": "NUM",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "OP",
+     "cls": "zc",
+     "value": "SQUARE"
+    }
+   ],
+   "code": "math.pow(0, 2)"
+  },
+  {
+   "type": "math_trig",
+   "title": "sin ?",
+   "inputs": [
+    {
+     "name": "NUM",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "OP",
+     "cls": "zc",
+     "value": "SIN"
+    }
+   ],
+   "code": "math.sin(0 / 180.0 * math.pi)"
+  },
+  {
+   "type": "math_constant",
+   "title": "π",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "CONSTANT",
+     "cls": "zc",
+     "value": "PI"
+    }
+   ],
+   "code": "math.pi"
+  },
+  {
+   "type": "math_number_property",
+   "title": "? is even",
+   "inputs": [
+    {
+     "name": "NUMBER_TO_CHECK",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "PROPERTY",
+     "cls": "zc",
+     "value": "EVEN"
+    }
+   ],
+   "code": "0 % 2 == 0"
+  },
+  {
+   "type": "math_change",
+   "title": "将 item 增加 ?",
+   "inputs": [
+    {
+     "name": "DELTA",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "将"
+    },
+    {
+     "name": "VAR",
+     "cls": "PE",
+     "value": ".b!8lr`xSmrGWGaEcg,["
+    },
+    {
+     "cls": "w3",
+     "value": "增加"
+    }
+   ],
+   "code": "<highlight>'DsUMKz$x@zC=NwG}4j$i'</highlight>item = (item if isinstance(item, (int, float)) else 0) + 0\n"
+  },
+  {
+   "type": "math_round",
+   "title": "round 保留 0 位小数 ?",
+   "inputs": [
+    {
+     "name": "NUM",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "OP",
+     "cls": "zc",
+     "value": "ROUND"
+    },
+    {
+     "cls": "w3",
+     "value": "保留"
+    },
+    {
+     "name": "DECIMALS",
+     "cls": "wE",
+     "value": "0"
+    },
+    {
+     "cls": "w3",
+     "value": "位小数"
+    }
+   ],
+   "code": "round(0)"
+  },
+  {
+   "type": "math_on_list",
+   "title": "sum of list ?",
+   "inputs": [
+    {
+     "name": "LIST",
+     "type": 1,
+     "check": [
+      "Array"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "OP",
+     "cls": "zc",
+     "value": "SUM"
+    },
+    {
+     "cls": "w3",
+     "value": "of list"
+    }
+   ],
+   "code": "sum([])"
+  },
+  {
+   "type": "math_modulo",
+   "title": "remainder of ? ÷ ?",
+   "inputs": [
+    {
+     "name": "DIVIDEND",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "DIVISOR",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "remainder of"
+    },
+    {
+     "cls": "w3",
+     "value": "÷"
+    }
+   ],
+   "code": "0 % 0"
+  },
+  {
+   "type": "math_constrain",
+   "title": "constrain ? low ? high ?",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "LOW",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "HIGH",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "constrain"
+    },
+    {
+     "cls": "w3",
+     "value": "low"
+    },
+    {
+     "cls": "w3",
+     "value": "high"
+    }
+   ],
+   "code": "min(max(0, 0), float('inf'))"
+  },
+  {
+   "type": "math_random_int",
+   "title": "random integer from ? to ?",
+   "inputs": [
+    {
+     "name": "FROM",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "TO",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "random integer from"
+    },
+    {
+     "cls": "w3",
+     "value": "to"
+    }
+   ],
+   "code": "random.randint(0, 0)"
+  },
+  {
+   "type": "math_random_float",
+   "title": "random fraction",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "random fraction"
+    }
+   ],
+   "code": "random.random()"
+  },
+  {
+   "type": "math_atan2",
+   "title": "atan2 of X: ? Y: ?",
+   "inputs": [
+    {
+     "name": "X",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "Y",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "atan2 of X:"
+    },
+    {
+     "cls": "w3",
+     "value": "Y:"
+    }
+   ],
+   "code": "math.atan2(0, 0) / math.pi * 180"
+  },
+  {
+   "type": "procedures_mutatorcontainer",
+   "title": "inputs ? allow statements true",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "STACK",
+     "type": 3,
+     "check": null
+    },
+    {
+     "name": "STATEMENT_INPUT",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "inputs"
+    },
+    {
+     "cls": "w3",
+     "value": "allow statements"
+    },
+    {
+     "name": "STATEMENTS",
+     "cls": "V3",
+     "value": "TRUE"
+    }
+   ],
+   "codeErr": "Language \"Python\" does not know how to generate code for block type \"procedures_"
+  },
+  {
+   "type": "procedures_mutatorarg",
+   "title": "input name: x",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "input name:"
+    },
+    {
+     "name": "NAME",
+     "cls": "o1",
+     "value": "x"
+    }
+   ],
+   "codeErr": "Language \"Python\" does not know how to generate code for block type \"procedures_"
+  },
+  {
+   "type": "procedures_callnoreturn",
+   "title": "???",
+   "inputs": [
+    {
+     "name": "TOPROW",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "NAME",
+     "cls": "w3",
+     "value": ""
+    }
+   ],
+   "code": "<highlight>'LZ/ZK|w!!7%ixF*)BGHd'</highlight>unnamed()\n"
+  },
+  {
+   "type": "procedures_callreturn",
+   "title": "???",
+   "inputs": [
+    {
+     "name": "TOPROW",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "NAME",
+     "cls": "w3",
+     "value": ""
+    }
+   ],
+   "code": "unnamed()"
+  },
+  {
+   "type": "procedures_ifreturn",
+   "title": "if ? return ?",
+   "inputs": [
+    {
+     "name": "CONDITION",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    },
+    {
+     "name": "VALUE",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "if"
+    },
+    {
+     "cls": "w3",
+     "value": "return"
+    }
+   ],
+   "code": "<highlight>'k{cO+3F@AA4[zbTpb0X~'</highlight>if False:\n  return None\n"
+  },
+  {
+   "type": "text",
+   "title": "“ ”",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "data:image/png;base64,iVBORw0KGgoAAAANSU"
+    },
+    {
+     "name": "TEXT",
+     "cls": "o1",
+     "value": ""
+    },
+    {
+     "cls": "Yh",
+     "value": "data:image/png;base64,iVBORw0KGgoAAAANSU"
+    }
+   ],
+   "code": "''"
+  },
+  {
+   "type": "text_multiline",
+   "title": "¶",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "data:image/png;base64,iVBORw0KGgoAAAANSU"
+    },
+    {
+     "name": "TEXT",
+     "cls": "Um",
+     "value": ""
+    }
+   ],
+   "code": "''"
+  },
+  {
+   "type": "text_join",
+   "title": "create text with ? ?",
+   "inputs": [
+    {
+     "name": "ADD0",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "ADD1",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "PLUS",
+     "cls": "Yh",
+     "value": "data:image/svg+xml;base64,PHN2ZyB4bWxucz"
+    },
+    {
+     "name": "MINUS",
+     "cls": "Yh",
+     "value": "data:image/svg+xml;base64,PHN2ZyB4bWxucz"
+    },
+    {
+     "cls": "w3",
+     "value": "create text with"
+    }
+   ],
+   "code": "'' + ''"
+  },
+  {
+   "type": "text_create_join_container",
+   "title": "join ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "STACK",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "join"
+    }
+   ],
+   "codeErr": "Language \"Python\" does not know how to generate code for block type \"text_create"
+  },
+  {
+   "type": "text_create_join_item",
+   "title": "item",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "item"
+    }
+   ],
+   "codeErr": "Language \"Python\" does not know how to generate code for block type \"text_create"
+  },
+  {
+   "type": "text_append",
+   "title": "to item append text ?",
+   "inputs": [
+    {
+     "name": "TEXT",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "to"
+    },
+    {
+     "name": "VAR",
+     "cls": "PE",
+     "value": ".b!8lr`xSmrGWGaEcg,["
+    },
+    {
+     "cls": "w3",
+     "value": "append text"
+    }
+   ],
+   "code": "<highlight>'.I@]/}o^bK/2gj-efvr+'</highlight>item = str(item) + ''\n"
+  },
+  {
+   "type": "text_length",
+   "title": "length of ?",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "type": 1,
+     "check": [
+      "String",
+      "Array"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "length of"
+    }
+   ],
+   "code": "len('')"
+  },
+  {
+   "type": "text_isEmpty",
+   "title": "? is empty",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "type": 1,
+     "check": [
+      "String",
+      "Array"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "is empty"
+    }
+   ],
+   "code": "not len('')"
+  },
+  {
+   "type": "text_indexOf",
+   "title": "in text ? find first occurrence of text ?",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "FIND",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "in text"
+    },
+    {
+     "cls": "w3",
+     "value": "find"
+    },
+    {
+     "name": "END",
+     "cls": "zc",
+     "value": "FIRST"
+    },
+    {
+     "cls": "w3",
+     "value": "occurrence of text"
+    }
+   ],
+   "code": "''.find('') + 1"
+  },
+  {
+   "type": "text_charAt",
+   "title": "in text ? get letter # ?",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "AT",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "in text"
+    },
+    {
+     "cls": "w3",
+     "value": "get"
+    },
+    {
+     "name": "WHERE",
+     "cls": "zc",
+     "value": "FROM_START"
+    }
+   ],
+   "code": "''[0]"
+  },
+  {
+   "type": "text_getSubstring",
+   "title": "in text ? get substring from letter # ? to letter # ?",
+   "inputs": [
+    {
+     "name": "STRING",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "AT1",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "AT2",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "in text"
+    },
+    {
+     "cls": "w3",
+     "value": "get substring from"
+    },
+    {
+     "name": "WHERE1",
+     "cls": "zc",
+     "value": "FROM_START"
+    },
+    {
+     "cls": "w3",
+     "value": "to"
+    },
+    {
+     "name": "WHERE2",
+     "cls": "zc",
+     "value": "FROM_START"
+    }
+   ],
+   "code": "''[ : 1]"
+  },
+  {
+   "type": "text_changeCase",
+   "title": "to UPPER CASE ?",
+   "inputs": [
+    {
+     "name": "TEXT",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "to"
+    },
+    {
+     "name": "CASE",
+     "cls": "zc",
+     "value": "UPPERCASE"
+    }
+   ],
+   "code": "''.upper()"
+  },
+  {
+   "type": "text_trim",
+   "title": "trim spaces from both sides of ?",
+   "inputs": [
+    {
+     "name": "TEXT",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "trim spaces from"
+    },
+    {
+     "name": "MODE",
+     "cls": "zc",
+     "value": "BOTH"
+    },
+    {
+     "cls": "w3",
+     "value": "of"
+    }
+   ],
+   "code": "''.strip()"
+  },
+  {
+   "type": "text_print",
+   "title": "print ?",
+   "inputs": [
+    {
+     "name": "TEXT",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "print"
+    }
+   ],
+   "code": "<highlight>'vk7P.o{jv0Xs-p`f/~n~'</highlight>print('')\n"
+  },
+  {
+   "type": "text_prompt_ext",
+   "title": "prompt for text with message ?",
+   "inputs": [
+    {
+     "name": "TEXT",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "prompt for"
+    },
+    {
+     "name": "TYPE",
+     "cls": "zc",
+     "value": "TEXT"
+    },
+    {
+     "cls": "w3",
+     "value": "with message"
+    }
+   ],
+   "code": "text_prompt('')"
+  },
+  {
+   "type": "text_prompt",
+   "title": "prompt for text with message “ ”",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "prompt for"
+    },
+    {
+     "name": "TYPE",
+     "cls": "zc",
+     "value": "TEXT"
+    },
+    {
+     "cls": "w3",
+     "value": "with message"
+    },
+    {
+     "cls": "Yh",
+     "value": "data:image/png;base64,iVBORw0KGgoAAAANSU"
+    },
+    {
+     "name": "TEXT",
+     "cls": "o1",
+     "value": ""
+    },
+    {
+     "cls": "Yh",
+     "value": "data:image/png;base64,iVBORw0KGgoAAAANSU"
+    }
+   ],
+   "code": "text_prompt('')"
+  },
+  {
+   "type": "text_count",
+   "title": "count ? in ?",
+   "inputs": [
+    {
+     "name": "SUB",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "TEXT",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "count"
+    },
+    {
+     "cls": "w3",
+     "value": "in"
+    }
+   ],
+   "code": "''.count('')"
+  },
+  {
+   "type": "text_replace",
+   "title": "replace ? with ? in ?",
+   "inputs": [
+    {
+     "name": "FROM",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "TO",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "TEXT",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "replace"
+    },
+    {
+     "cls": "w3",
+     "value": "with"
+    },
+    {
+     "cls": "w3",
+     "value": "in"
+    }
+   ],
+   "code": "''.replace('', '')"
+  },
+  {
+   "type": "text_reverse",
+   "title": "reverse ?",
+   "inputs": [
+    {
+     "name": "TEXT",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "reverse"
+    }
+   ],
+   "code": "''[::-1]"
+  },
+  {
+   "type": "variables_get",
+   "title": "item",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "VAR",
+     "cls": "PE",
+     "value": ".b!8lr`xSmrGWGaEcg,["
+    }
+   ],
+   "code": "item"
+  },
+  {
+   "type": "variables_set",
+   "title": "set item to ?",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "set"
+    },
+    {
+     "name": "VAR",
+     "cls": "PE",
+     "value": ".b!8lr`xSmrGWGaEcg,["
+    },
+    {
+     "cls": "w3",
+     "value": "to"
+    }
+   ],
+   "code": "<highlight>'yfUMk.RN^h)j?]?:dLJ~'</highlight>item = 0\n"
+  },
+  {
+   "type": "variables_get_dynamic",
+   "title": "item",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "VAR",
+     "cls": "PE",
+     "value": ".b!8lr`xSmrGWGaEcg,["
+    }
+   ],
+   "code": "item"
+  },
+  {
+   "type": "variables_set_dynamic",
+   "title": "set item to ?",
+   "inputs": [
+    {
+     "name": "VALUE",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "set"
+    },
+    {
+     "name": "VAR",
+     "cls": "PE",
+     "value": ".b!8lr`xSmrGWGaEcg,["
+    },
+    {
+     "cls": "w3",
+     "value": "to"
+    }
+   ],
+   "code": "<highlight>'qT2QQy[~5Rg$:S%5(qIK'</highlight>item = 0\n"
+  },
+  {
+   "type": "lists_create_with",
+   "title": "create list with ? ? ?",
+   "inputs": [
+    {
+     "name": "ADD0",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "ADD1",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "ADD2",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "PLUS",
+     "cls": "Yh",
+     "value": "data:image/svg+xml;base64,PHN2ZyB4bWxucz"
+    },
+    {
+     "name": "MINUS",
+     "cls": "Yh",
+     "value": "data:image/svg+xml;base64,PHN2ZyB4bWxucz"
+    },
+    {
+     "cls": "w3",
+     "value": "create list with"
+    }
+   ],
+   "code": "[None, None, None]"
+  },
+  {
+   "type": "procedures_defnoreturn",
+   "title": "定义 ?",
+   "inputs": [
+    {
+     "name": "TOP",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "STACK",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "PLUS",
+     "cls": "Yh",
+     "value": "data:image/svg+xml;base64,PHN2ZyB4bWxucz"
+    },
+    {
+     "cls": "w3",
+     "value": "定义"
+    },
+    {
+     "name": "NAME",
+     "cls": "o1",
+     "value": ""
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "procedures_defreturn",
+   "title": "定义 ? return ?",
+   "inputs": [
+    {
+     "name": "TOP",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "STACK",
+     "type": 3,
+     "check": null
+    },
+    {
+     "name": "RETURN",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "PLUS",
+     "cls": "Yh",
+     "value": "data:image/svg+xml;base64,PHN2ZyB4bWxucz"
+    },
+    {
+     "cls": "w3",
+     "value": "定义"
+    },
+    {
+     "name": "NAME",
+     "cls": "o1",
+     "value": ""
+    },
+    {
+     "cls": "w3",
+     "value": "return"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "rx_controller",
+   "title": "Name RX Input - ? Output - ? Motor - ? I2C (EXT) - ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "Input-0",
+     "type": 1,
+     "check": [
+      "FT_Input"
+     ]
+    },
+    {
+     "name": "HookInput",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "Output-0",
+     "type": 1,
+     "check": [
+      "FT_Output"
+     ]
+    },
+    {
+     "name": "HookOutput",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "Motor-0",
+     "type": 1,
+     "check": [
+      "FT_Motor"
+     ]
+    },
+    {
+     "name": "HookMotor",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "I2C-0",
+     "type": 1,
+     "check": [
+      "FT_I2C"
+     ]
+    },
+    {
+     "name": "HookI2C",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "Name"
+    },
+    {
+     "name": "controller_name",
+     "cls": "o1",
+     "value": "RX"
+    },
+    {
+     "name": "Input",
+     "cls": "w3",
+     "value": "Input"
+    },
+    {
+     "name": "Input-0",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "Output",
+     "cls": "w3",
+     "value": "Output"
+    },
+    {
+     "name": "Output-0",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "Motor",
+     "cls": "w3",
+     "value": "Motor"
+    },
+    {
+     "name": "Motor-0",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "I2C",
+     "cls": "w3",
+     "value": "I2C (EXT)"
+    },
+    {
+     "name": "I2C-0",
+     "cls": "zc",
+     "value": "-"
+    }
+   ],
+   "code": "<highlight>'IVIVNo?fg2p$19O6/w(r'</highlight>"
+  },
+  {
+   "type": "bt_smart_controller",
+   "title": "Name BTSmart Input - ? Motor - ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "Input-0",
+     "type": 1,
+     "check": [
+      "FT_Input"
+     ]
+    },
+    {
+     "name": "HookInput",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "Motor-0",
+     "type": 1,
+     "check": [
+      "FT_Motor"
+     ]
+    },
+    {
+     "name": "HookMotor",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "Name"
+    },
+    {
+     "name": "controller_name",
+     "cls": "o1",
+     "value": "BTSmart"
+    },
+    {
+     "name": "Input",
+     "cls": "w3",
+     "value": "Input"
+    },
+    {
+     "name": "Input-0",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "Motor",
+     "cls": "w3",
+     "value": "Motor"
+    },
+    {
+     "name": "Motor-0",
+     "cls": "zc",
+     "value": "-"
+    }
+   ],
+   "code": "<highlight>'3.LgHRN-{9n^;hJ2H7CK'</highlight>"
+  },
+  {
+   "type": "txt4_controller",
+   "title": "* Mode Master Name TXT Input - ? Output - ? Motor - ? Servomotor - ? Counter / Digital Input - ? I2C",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "Input-0",
+     "type": 1,
+     "check": [
+      "FT_Input"
+     ]
+    },
+    {
+     "name": "HookInput",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "Output-0",
+     "type": 1,
+     "check": [
+      "FT_Output"
+     ]
+    },
+    {
+     "name": "HookOutput",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "Motor-0",
+     "type": 1,
+     "check": [
+      "FT_Motor"
+     ]
+    },
+    {
+     "name": "HookMotor",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "Servomotor-0",
+     "type": 1,
+     "check": [
+      "FT_Servomotor"
+     ]
+    },
+    {
+     "name": "HookServomotor",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "Counter-0",
+     "type": 1,
+     "check": [
+      "FT_Counter"
+     ]
+    },
+    {
+     "name": "HookCounter",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "I2C-0",
+     "type": 1,
+     "check": [
+      "FT_I2C"
+     ]
+    },
+    {
+     "name": "HookI2C",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "USB-0",
+     "type": 1,
+     "check": [
+      "FT_USB"
+     ]
+    },
+    {
+     "name": "HookUSB",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "state",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "Mode"
+    },
+    {
+     "name": "mode",
+     "cls": "zc",
+     "value": "0"
+    },
+    {
+     "cls": "w3",
+     "value": "Name"
+    },
+    {
+     "name": "controller_name",
+     "cls": "o1",
+     "value": "TXT"
+    },
+    {
+     "name": "Input",
+     "cls": "w3",
+     "value": "Input"
+    },
+    {
+     "name": "Input-0",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "Output",
+     "cls": "w3",
+     "value": "Output"
+    },
+    {
+     "name": "Output-0",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "Motor",
+     "cls": "w3",
+     "value": "Motor"
+    },
+    {
+     "name": "Motor-0",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "Servomotor",
+     "cls": "w3",
+     "value": "Servomotor"
+    },
+    {
+     "name": "Servomotor-0",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "Counter",
+     "cls": "w3",
+     "value": "Counter / Digital Input"
+    },
+    {
+     "name": "Counter-0",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "I2C",
+     "cls": "w3",
+     "value": "I2C (EXT)"
+    },
+    {
+     "name": "I2C-0",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "USB",
+     "cls": "w3",
+     "value": "USB1"
+    },
+    {
+     "name": "USB-0",
+     "cls": "zc",
+     "value": "-"
+    }
+   ],
+   "code": "<highlight>'~SyC3q6Edn[5y6QDAXf7'</highlight>"
+  },
+  {
+   "type": "mini_switch",
+   "title": "微型开关",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "mini_switch",
+     "cls": "w3",
+     "value": "微型开关"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "reed_switch",
+   "title": "干簧触点",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "reed_switch",
+     "cls": "w3",
+     "value": "干簧触点"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "ntc_resistor",
+   "title": "NTC 电阻",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "ntc_resistor",
+     "cls": "w3",
+     "value": "NTC 电阻"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "photo_resistor",
+   "title": "光敏电阻",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "photo_resistor",
+     "cls": "w3",
+     "value": "光敏电阻"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "photo_transistor",
+   "title": "光电晶体管",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "photo_transistor",
+     "cls": "w3",
+     "value": "光电晶体管"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "ultrasonic_distance_meter",
+   "title": "超声波距离传感器",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "ultrasonic_distance_meter",
+     "cls": "w3",
+     "value": "超声波距离传感器"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "color_sensor",
+   "title": "光学颜色传感器",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "color_sensor",
+     "cls": "w3",
+     "value": "光学颜色传感器"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "trail_follower",
+   "title": "红外循迹传感器",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "trail_follower",
+     "cls": "w3",
+     "value": "红外循迹传感器"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "led",
+   "title": "LED",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "led",
+     "cls": "w3",
+     "value": "LED"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "magnetic_valve",
+   "title": "3/2 通电磁阀",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "magnetic_valve",
+     "cls": "w3",
+     "value": "3/2 通电磁阀"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "compressor",
+   "title": "压缩机",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "compressor",
+     "cls": "w3",
+     "value": "压缩机"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "unidirectional_motor",
+   "title": "电机",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "unidirectional_motor",
+     "cls": "w3",
+     "value": "电机"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "motor",
+   "title": "电机",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "motor",
+     "cls": "w3",
+     "value": "电机"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "encodermotor",
+   "title": "编码电机",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "encodermotor",
+     "cls": "w3",
+     "value": "编码电机"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "servomotor",
+   "title": "舵机",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "servomotor",
+     "cls": "w3",
+     "value": "舵机"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "motor_step_counter",
+   "title": "编码电机 - 计数器",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "编码电机"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "计数器"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "combined_sensor",
+   "title": "组合传感器-10pin",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "combined_sensor",
+     "cls": "w3",
+     "value": "组合传感器-10pin"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "combined_sensor_6pin",
+   "title": "组合传感器-6pin",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "combined_sensor_6pin",
+     "cls": "w3",
+     "value": "组合传感器-6pin"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "environment_sensor",
+   "title": "环境传感器",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "environment_sensor",
+     "cls": "w3",
+     "value": "环境传感器"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "camera",
+   "title": "camera 摄像头",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "camera",
+     "cls": "w3",
+     "value": "摄像头"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "microphone",
+   "title": "microphone 麦克风",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "microphone",
+     "cls": "w3",
+     "value": "麦克风"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "input_mini_switch_get_state",
+   "title": "获取微型开关 - 的状态",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取微型开关"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "的状态"
+    }
+   ],
+   "code": "-.get_state()"
+  },
+  {
+   "type": "input_mini_switch_if_state",
+   "title": "为微型开关 - 打开",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "为微型开关"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "open"
+    }
+   ],
+   "code": "-.is_open()"
+  },
+  {
+   "type": "input_reed_switch_get_state",
+   "title": "获取干簧触点 - 的状态",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取干簧触点"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "的状态"
+    }
+   ],
+   "code": "-.get_state()"
+  },
+  {
+   "type": "input_reed_switch_if_state",
+   "title": "为干簧触点 - 打开",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "为干簧触点"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "open"
+    }
+   ],
+   "code": "-.is_open()"
+  },
+  {
+   "type": "input_ultrasonic_sensor_get_value",
+   "title": "获取超声波传感器 - 距离",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取超声波传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "距离"
+    }
+   ],
+   "code": "-.get_distance()"
+  },
+  {
+   "type": "input_ultrasonic_sensor_if_value",
+   "title": "超声波传感器 - 距离 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "超声波传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "距离"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_distance() == "
+  },
+  {
+   "type": "input_color_sensor_get_value",
+   "title": "获取颜色传感器 - 数值",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取颜色传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "数值"
+    }
+   ],
+   "code": "-.get_voltage()"
+  },
+  {
+   "type": "input_color_sensor_if_value",
+   "title": "颜色传感器 - 数值 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "颜色传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "数值"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_voltage() == "
+  },
+  {
+   "type": "input_ir_track_sensor_get_value",
+   "title": "获取红外循迹传感器 - 状态",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取红外循迹传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "状态"
+    }
+   ],
+   "code": "-.get_state()"
+  },
+  {
+   "type": "input_ir_track_sensor_if_value",
+   "title": "红外循迹传感器 - 状态 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "红外循迹传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "状态"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_state() == "
+  },
+  {
+   "type": "input_photo_transistor_get_state",
+   "title": "获取光电晶体管 - 状态",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取光电晶体管"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "状态"
+    }
+   ],
+   "code": "-.get_state()"
+  },
+  {
+   "type": "input_photo_transistor_if_state",
+   "title": "光电晶体管 - 亮",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "光电晶体管"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "bright"
+    }
+   ],
+   "code": "-.is_bright()"
+  },
+  {
+   "type": "input_photo_resistor_get_value",
+   "title": "获取光敏电阻 - 的值",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取光敏电阻"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "的值"
+    }
+   ],
+   "code": "-.get_resistance()"
+  },
+  {
+   "type": "input_photo_resistor_if_value",
+   "title": "光敏电阻 - 数值 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "光敏电阻"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "数值"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_resistance() == "
+  },
+  {
+   "type": "input_ntc_get_value",
+   "title": "获取 NTC 电阻 - 电阻",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取 NTC 电阻"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "resistance"
+    }
+   ],
+   "code": "-.get_resistance()"
+  },
+  {
+   "type": "input_ntc_if_value",
+   "title": "NTC 电阻 - 电阻 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "NTC 电阻"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "resistance"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_resistance() == "
+  },
+  {
+   "type": "output_led_get_value",
+   "title": "获取 LED - 亮度",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取 LED"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "亮度"
+    }
+   ],
+   "code": "-.get_brightness()"
+  },
+  {
+   "type": "output_led_set_value",
+   "title": "设置 LED - 亮度 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置 LED"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "亮度"
+    }
+   ],
+   "code": "<highlight>'CQfx42cf+7;-#Daaym#U'</highlight>-.set_brightness(int())\n"
+  },
+  {
+   "type": "output_led_if_value",
+   "title": "LED - 亮度 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "LED"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "亮度"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_brightness() == "
+  },
+  {
+   "type": "output_led_toggle_state",
+   "title": "设置 LED - 开",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "output_led_toggle_state",
+     "cls": "w3",
+     "value": "设置 LED"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "on"
+    }
+   ],
+   "code": "<highlight>'jdzS0SZTpUCBS:ylBRfk'</highlight>-.set_brightness(512)\n"
+  },
+  {
+   "type": "output_led_if_state",
+   "title": "LED 是否 - 开",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "output_led_if_state",
+     "cls": "w3",
+     "value": "LED 是否"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "on"
+    }
+   ],
+   "code": "-.is_on()"
+  },
+  {
+   "type": "output_magnetic_valve_toggle_state",
+   "title": "设置电磁阀 - 开",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "output_magnetic_valve_toggle_state",
+     "cls": "w3",
+     "value": "设置电磁阀"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "on"
+    }
+   ],
+   "code": "<highlight>'D48E]!j=Wi[`=0S?t[#F'</highlight>-.on()\n"
+  },
+  {
+   "type": "output_magnetic_valve_if_state",
+   "title": "电磁阀是否 - 开",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "output_magnetic_valve_if_state",
+     "cls": "w3",
+     "value": "电磁阀是否"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "on"
+    }
+   ],
+   "code": "-.is_on()"
+  },
+  {
+   "type": "output_compressor_toggle_state",
+   "title": "设置压缩机 - 开",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "output_compressor_toggle_state",
+     "cls": "w3",
+     "value": "设置压缩机"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "on"
+    }
+   ],
+   "code": "<highlight>'urxm%$7_]P_#NTfI/4iO'</highlight>-.on()\n"
+  },
+  {
+   "type": "output_compressor_if_state",
+   "title": "压缩机是否 - 开",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "output_compressor_if_state",
+     "cls": "w3",
+     "value": "压缩机是否"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "on"
+    }
+   ],
+   "code": "-.is_on()"
+  },
+  {
+   "type": "unidirectional_motor_set_speed",
+   "title": "设置输出端 - 的电机速度 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置输出端"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "的电机速度"
+    }
+   ],
+   "code": "<highlight>'[j6xaR@KxsTxfl0._Jqh'</highlight>-.set_speed(int())\n"
+  },
+  {
+   "type": "unidirectional_motor_get_speed",
+   "title": "获取输出端 - 的电机速度",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取输出端"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "的电机速度"
+    }
+   ],
+   "code": "-.get_speed()"
+  },
+  {
+   "type": "unidirectional_motor_stop",
+   "title": "停止输出端电机 -",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "unidirectional_motor_stop",
+     "cls": "w3",
+     "value": "停止输出端电机"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    }
+   ],
+   "code": "<highlight>'/wucs3}=3ay~|aV(n~!!'</highlight>-.stop()\n"
+  },
+  {
+   "type": "unidirectional_motor_if_running",
+   "title": "输出端 - 的电机是否正在运行",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "输出端"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "的电机是否正在运行"
+    }
+   ],
+   "code": "-.is_running()"
+  },
+  {
+   "type": "unidirectional_motor_if_speed",
+   "title": "输出端 - 的电机速度 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "输出端"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "的电机速度"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_speed() == "
+  },
+  {
+   "type": "output_number",
+   "title": "0",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "OUTPUT_NUM",
+     "cls": "wE",
+     "value": "0"
+    }
+   ],
+   "code": "0"
+  },
+  {
+   "type": "motor_set_speed",
+   "title": "设置电机 - 逆时针 速度 ?",
+   "inputs": [
+    {
+     "name": "speed",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "plus",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置电机"
+    },
+    {
+     "name": "instance_name_0",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "direction_0",
+     "cls": "zc",
+     "value": "Motor.CCW"
+    },
+    {
+     "cls": "w3",
+     "value": "速度"
+    }
+   ],
+   "code": "<highlight>'W[;E,3kg29dZC[:W4;r?'</highlight>"
+  },
+  {
+   "type": "motor_get_speed",
+   "title": "获取电机 - 速度",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取电机"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "速度"
+    }
+   ],
+   "code": "-.get_speed()"
+  },
+  {
+   "type": "motor_if_speed",
+   "title": "电机 - 速度 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "电机"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "速度"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "abs(-.get_speed()) == "
+  },
+  {
+   "type": "motor_if_running",
+   "title": "电机 - 是否正在运行",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "电机"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "是否正在运行"
+    }
+   ],
+   "code": "-.is_running()"
+  },
+  {
+   "type": "motor_stop",
+   "title": "停止电机 -",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "plus",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "停止电机"
+    },
+    {
+     "name": "instance_name_0",
+     "cls": "zc",
+     "value": "-"
+    }
+   ],
+   "code": "<highlight>'@1/Q~0Jp79$mkFfBc@xh'</highlight>"
+  },
+  {
+   "type": "motor_number",
+   "title": "0",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "MOTOR_NUM",
+     "cls": "wE",
+     "value": "0"
+    }
+   ],
+   "code": "0"
+  },
+  {
+   "type": "encodermotor_stop",
+   "title": "停止电机 -",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "plus",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "停止电机"
+    },
+    {
+     "name": "instance_name_0",
+     "cls": "zc",
+     "value": "-"
+    }
+   ],
+   "code": "<highlight>'}VbS6hH@Wp71BM9nCfmd'</highlight>-.stop_sync()\n"
+  },
+  {
+   "type": "encodermotor_set_values",
+   "title": "设置电机 - 逆时针 速度 ? 步长 ?",
+   "inputs": [
+    {
+     "name": "speed",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "distance",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "plus",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置电机"
+    },
+    {
+     "name": "instance_name_0",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "direction_0",
+     "cls": "zc",
+     "value": "Motor.CCW"
+    },
+    {
+     "cls": "w3",
+     "value": "速度"
+    },
+    {
+     "cls": "w3",
+     "value": "步长"
+    }
+   ],
+   "code": "<highlight>'LA:XxN/PG|Xj(I]j#QRa'</highlight>-.set_speed(int(), Motor.CCW)\n-.set_distance(int())\n"
+  },
+  {
+   "type": "encodermotor_set_speed",
+   "title": "设置电机 - 逆时针 速度 ?",
+   "inputs": [
+    {
+     "name": "speed",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "plus",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置电机"
+    },
+    {
+     "name": "instance_name_0",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "direction_0",
+     "cls": "zc",
+     "value": "Motor.CCW"
+    },
+    {
+     "cls": "w3",
+     "value": "速度"
+    }
+   ],
+   "code": "<highlight>'+Ex8nXN:Vw[AK3teO{.X'</highlight>-.set_speed(int(), Motor.CCW)\n-.start_sync()\n"
+  },
+  {
+   "type": "encodermotor_position_read",
+   "title": "电机 - 是否到达目标位置",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "电机"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "是否到达目标位置"
+    }
+   ],
+   "code": "not -.is_running()"
+  },
+  {
+   "type": "servomotor_set_position",
+   "title": "设置舵机 - 位置 ?",
+   "inputs": [
+    {
+     "name": "position",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置舵机"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "位置"
+    }
+   ],
+   "code": "<highlight>'%M_lPr/,2`[PT5(T0x9]'</highlight>-.set_position(int())\n"
+  },
+  {
+   "type": "servomotor_set_position_in_degrees",
+   "title": "设置舵机 - 角度 ?",
+   "inputs": [
+    {
+     "name": "position",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置舵机"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "角度"
+    }
+   ],
+   "code": "<highlight>'iY*GA3Su,HjqvOcHcn3P'</highlight>-.set_position(int((( + 90) / 180) * 512))\n"
+  },
+  {
+   "type": "servomotor_get_position",
+   "title": "获取舵机 - 位置",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取舵机"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "position"
+    }
+   ],
+   "code": "-.get_position()"
+  },
+  {
+   "type": "servomotor_number",
+   "title": "0",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "SERVOMOTOR_NUM",
+     "cls": "wE",
+     "value": "0"
+    }
+   ],
+   "code": "0"
+  },
+  {
+   "type": "servomotor_number_in_degrees",
+   "title": "0",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "SERVOMOTOR_NUM",
+     "cls": "wE",
+     "value": "0"
+    }
+   ],
+   "code": "0"
+  },
+  {
+   "type": "counter_get_value",
+   "title": "获取计数器 - 的值",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取计数器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "的值"
+    }
+   ],
+   "code": "-.get_count()"
+  },
+  {
+   "type": "counter_if_value",
+   "title": "计数器 - 的值为 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "计数器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "的值为"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_count() == "
+  },
+  {
+   "type": "counter_reset",
+   "title": "重置计数器 -",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "counter_reset",
+     "cls": "w3",
+     "value": "重置计数器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    }
+   ],
+   "code": "<highlight>'Hn}~v}uP98F923p(@5=-'</highlight>-.reset()\n"
+  },
+  {
+   "type": "i2c_combined_sensor_init_magnetometer",
+   "title": "初始化磁力计 - 速率： 2 (Hz)",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "初始化磁力计"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "速率："
+    },
+    {
+     "name": "rate",
+     "cls": "zc",
+     "value": "2"
+    },
+    {
+     "cls": "w3",
+     "value": "(Hz)"
+    }
+   ],
+   "code": "<highlight>'6l:ZO497|Xf:_t7WWtKM'</highlight>-.init_magnetometer(2)\n"
+  },
+  {
+   "type": "i2c_combined_sensor_init_gyrometer",
+   "title": "初始化陀螺仪 - 量程： 125 (°/s) 带宽： 12 (Hz) 补偿： false",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "初始化陀螺仪"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "量程："
+    },
+    {
+     "name": "range",
+     "cls": "zc",
+     "value": "125"
+    },
+    {
+     "cls": "w3",
+     "value": "(°/s) 带宽："
+    },
+    {
+     "name": "bandwidth",
+     "cls": "zc",
+     "value": "12"
+    },
+    {
+     "cls": "w3",
+     "value": "(Hz) 补偿："
+    },
+    {
+     "name": "compensation",
+     "cls": "V3",
+     "value": "FALSE"
+    }
+   ],
+   "code": "<highlight>'8WyN^|{Vc}9(=e)}DxqS'</highlight>-.init_gyrometer(125, 12)\n"
+  },
+  {
+   "type": "i2c_combined_sensor_init_accelerometer",
+   "title": "初始化加速度计 - 量程： 2 (g) 带宽： 7.81 (Hz) 补偿： false",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "初始化加速度计"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "量程："
+    },
+    {
+     "name": "range",
+     "cls": "zc",
+     "value": "2"
+    },
+    {
+     "cls": "w3",
+     "value": "(g) 带宽："
+    },
+    {
+     "name": "bandwidth",
+     "cls": "zc",
+     "value": "8"
+    },
+    {
+     "cls": "w3",
+     "value": "(Hz) 补偿："
+    },
+    {
+     "name": "compensation",
+     "cls": "V3",
+     "value": "FALSE"
+    }
+   ],
+   "code": "<highlight>'QjBe:(PxX!h`X$``oI-^'</highlight>-.init_accelerometer(2, 8)\n"
+  },
+  {
+   "type": "i2c__combined_sensor_get_acceleration",
+   "title": "获取组合传感器 - 在 x-方向 方向的加速度",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取组合传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "在"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "acceleration_x"
+    },
+    {
+     "cls": "w3",
+     "value": "方向的加速度"
+    }
+   ],
+   "code": "-.get_acceleration_x()"
+  },
+  {
+   "type": "i2c_combined_sensor_if_acceleration",
+   "title": "为组合传感器 - 在 x-方向 方向的加速度 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "为组合传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "在"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "acceleration_x"
+    },
+    {
+     "cls": "w3",
+     "value": "方向的加速度"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_acceleration_x() == "
+  },
+  {
+   "type": "i2c_combined_sensor_get_magnetic_field",
+   "title": "获取组合传感器 - 在 x-方向 方向的磁通量",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取组合传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "在"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "magnetic_field_x"
+    },
+    {
+     "cls": "w3",
+     "value": "方向的磁通量"
+    }
+   ],
+   "code": "-.get_magnetic_field_x()"
+  },
+  {
+   "type": "i2c_combined_sensor_if_magnetic_field",
+   "title": "为组合传感器 - 在 x-方向 方向的磁通量 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "为组合传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "在"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "magnetic_field_x"
+    },
+    {
+     "cls": "w3",
+     "value": "方向的磁通量"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_magnetic_field_x() == "
+  },
+  {
+   "type": "i2c_combined_sensor_get_rotation",
+   "title": "获取组合传感器 - 绕 x-方向 轴的转速",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取组合传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "绕"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "rotation_x"
+    },
+    {
+     "cls": "w3",
+     "value": "轴的转速"
+    }
+   ],
+   "code": "-.get_rotation_x()"
+  },
+  {
+   "type": "i2c_combined_sensor_if_rotation",
+   "title": "为组合传感器 - 绕 x-方向 轴的转速 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "为组合传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "绕"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "rotation_x"
+    },
+    {
+     "cls": "w3",
+     "value": "轴的转速"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_rotation_x() == "
+  },
+  {
+   "type": "i2c_environment_sensor_get_humidity",
+   "title": "获取环境传感器 - 湿度",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取环境传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "湿度"
+    }
+   ],
+   "code": "-.get_humidity()"
+  },
+  {
+   "type": "i2c_environment_sensor_if_humidity",
+   "title": "为环境传感器 - 湿度 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "为环境传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "湿度"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_humidity() == "
+  },
+  {
+   "type": "i2c_environment_sensor_get_iaq",
+   "title": "以 数字 获取环境传感器 - 空气质量",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "以"
+    },
+    {
+     "name": "dropdown_event",
+     "cls": "zc",
+     "value": "number"
+    },
+    {
+     "cls": "w3",
+     "value": "获取环境传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "空气质量"
+    }
+   ],
+   "code": "-.get_indoor_air_quality_as_number()"
+  },
+  {
+   "type": "i2c_environment_sensor_if_iaq",
+   "title": "为环境传感器 - 空气质量 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "为环境传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "空气质量"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_indoor_air_quality_as_number() == "
+  },
+  {
+   "type": "i2c_environment_sensor_get_pressure",
+   "title": "获取环境传感器 - 气压",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取环境传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "气压"
+    }
+   ],
+   "code": "-.get_pressure()"
+  },
+  {
+   "type": "i2c_environment_sensor_if_pressure",
+   "title": "为环境传感器 - 气压 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "为环境传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "气压"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_pressure() == "
+  },
+  {
+   "type": "i2c_environment_sensor_get_temperature",
+   "title": "获取环境传感器 - 温度",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取环境传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "温度"
+    }
+   ],
+   "code": "-.get_temperature()"
+  },
+  {
+   "type": "i2c_environment_sensor_if_temperature",
+   "title": "为环境传感器 - 温度 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "为环境传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "温度"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_temperature() == "
+  },
+  {
+   "type": "i2c_environment_sensor_calibrate",
+   "title": "校准环境传感器 -",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "校准环境传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    }
+   ],
+   "code": "<highlight>'}5(/Fzu].57H7Xf0MnYR'</highlight>-.calibrate()\n"
+  },
+  {
+   "type": "i2c_environment_sensor_if_need_calibration",
+   "title": "需要校准环境传感器 -",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "需要校准环境传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    }
+   ],
+   "code": "-.needs_calibration()"
+  },
+  {
+   "type": "i2c_environment_sensor_get_accuracy",
+   "title": "获取环境传感器 - 精度",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取环境传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "精度"
+    }
+   ],
+   "code": "-.get_accuracy()"
+  },
+  {
+   "type": "camera_color_if_value",
+   "title": "颜色 ? = ? ，色相容差 20 度",
+   "inputs": [
+    {
+     "name": "instance_name",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "颜色"
+    },
+    {
+     "name": "dropdown_event",
+     "cls": "zc",
+     "value": "True"
+    },
+    {
+     "cls": "w3",
+     "value": "，色相容差"
+    },
+    {
+     "name": "tolerance",
+     "cls": "wE",
+     "value": "20"
+    },
+    {
+     "cls": "w3",
+     "value": "度"
+    }
+   ],
+   "code": ".compare(hex=\"\", hue_tolerance=20) == True"
+  },
+  {
+   "type": "camera_color_get_value",
+   "title": "获取颜色 ? ，格式为 HEX",
+   "inputs": [
+    {
+     "name": "instance_name",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取颜色"
+    },
+    {
+     "cls": "w3",
+     "value": "，格式为"
+    },
+    {
+     "name": "format",
+     "cls": "zc",
+     "value": "hex"
+    }
+   ],
+   "code": ".get_hex()"
+  },
+  {
+   "type": "camera_ball_if_value",
+   "title": "小球 ? 的 x 坐标 为 = ?",
+   "inputs": [
+    {
+     "name": "instance_name",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "value",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "小球"
+    },
+    {
+     "cls": "w3",
+     "value": "的"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "x"
+    },
+    {
+     "cls": "w3",
+     "value": "为"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": ".x == "
+  },
+  {
+   "type": "camera_ball_get_value",
+   "title": "获取小球 ? 的 x 坐标",
+   "inputs": [
+    {
+     "name": "instance_name",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取小球"
+    },
+    {
+     "cls": "w3",
+     "value": "的"
+    },
+    {
+     "name": "dropdown_event",
+     "cls": "zc",
+     "value": "x"
+    }
+   ],
+   "code": ".x"
+  },
+  {
+   "type": "camera_line_if_value",
+   "title": "列表 ? 中第 ? 条线的 位置 为 = ?",
+   "inputs": [
+    {
+     "name": "instance_name",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "index",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "value",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "列表"
+    },
+    {
+     "cls": "w3",
+     "value": "中第"
+    },
+    {
+     "cls": "w3",
+     "value": "条线的"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "position"
+    },
+    {
+     "cls": "w3",
+     "value": "为"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "[-1].position == "
+  },
+  {
+   "type": "camera_line_get_value",
+   "title": "获取列表 ? 中第 ? 条线的 位置",
+   "inputs": [
+    {
+     "name": "instance_name",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "index",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取列表"
+    },
+    {
+     "cls": "w3",
+     "value": "中第"
+    },
+    {
+     "cls": "w3",
+     "value": "条线的"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "position"
+    }
+   ],
+   "code": "[-1].position"
+  },
+  {
+   "type": "camera_line_get_color",
+   "title": "获取列表 ? 中第 ? 条线的颜色，格式为 HEX",
+   "inputs": [
+    {
+     "name": "instance_name",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "index",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取列表"
+    },
+    {
+     "cls": "w3",
+     "value": "中第"
+    },
+    {
+     "cls": "w3",
+     "value": "条线的颜色，格式为"
+    },
+    {
+     "name": "format",
+     "cls": "zc",
+     "value": "hex"
+    }
+   ],
+   "code": "[-1].color.get_hex()"
+  },
+  {
+   "type": "camera_line_if_color",
+   "title": "列表 ? 中第 ? 条线的颜色 = ? ，色相容差 20 度",
+   "inputs": [
+    {
+     "name": "instance_name",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "index",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "列表"
+    },
+    {
+     "cls": "w3",
+     "value": "中第"
+    },
+    {
+     "cls": "w3",
+     "value": "条线的颜色"
+    },
+    {
+     "name": "dropdown_event",
+     "cls": "zc",
+     "value": "True"
+    },
+    {
+     "cls": "w3",
+     "value": "，色相容差"
+    },
+    {
+     "name": "tolerance",
+     "cls": "wE",
+     "value": "20"
+    },
+    {
+     "cls": "w3",
+     "value": "度"
+    }
+   ],
+   "code": "[-1].color.compare(hex=\"\", hue_tolerance=20)"
+  },
+  {
+   "type": "camera_on_ball_detected",
+   "title": "检测到小球 - 时：事件 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "检测到小球"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "时：事件"
+    }
+   ],
+   "code": "<highlight>'7G*ck(l3rPj~|v%mAN-B'</highlight>"
+  },
+  {
+   "type": "camera_on_lines_detected",
+   "title": "检测到线条 - 时：事件列表 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "检测到线条"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "时：事件列表"
+    }
+   ],
+   "code": "<highlight>'!*7Jz.aib(fvL-2s8c(2'</highlight>"
+  },
+  {
+   "type": "camera_on_color_detected",
+   "title": "检测到颜色 - 时：事件 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "检测到颜色"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "时：事件"
+    }
+   ],
+   "code": "<highlight>'mA$W1XNc!-(`IQ$RCRdu'</highlight>"
+  },
+  {
+   "type": "camera_on_motion_detected",
+   "title": "检测到运动 - 时：事件 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "检测到运动"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "时：事件"
+    }
+   ],
+   "code": "<highlight>'#.#Ob;R]$b4{+_`p)E.['</highlight>"
+  },
+  {
+   "type": "camera_on_image_change",
+   "title": "图像 - 变化时：事件 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "图像"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "变化时：事件"
+    }
+   ],
+   "code": "<highlight>'[etog-ZBWtsjt%vS^oh3'</highlight>"
+  },
+  {
+   "type": "camera_detection_event",
+   "title": "事件",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "camera_detection_event",
+     "cls": "w3",
+     "value": "事件"
+    }
+   ],
+   "code": "event.value"
+  },
+  {
+   "type": "camera_image_to_base64",
+   "title": "将图像 ? 转换为 base64",
+   "inputs": [
+    {
+     "name": "instance_name",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "将图像"
+    },
+    {
+     "cls": "w3",
+     "value": "转换为 base64"
+    }
+   ],
+   "code": "frame_to_base64()"
+  },
+  {
+   "type": "camera_get_frame",
+   "title": "从 - 获取帧",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "从"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "获取帧"
+    }
+   ],
+   "code": "-.read_frame()"
+  },
+  {
+   "type": "microphone_volume",
+   "title": "麦克风 - 音量",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "麦克风"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "音量"
+    }
+   ],
+   "code": "-.get_volume()"
+  },
+  {
+   "type": "microphone_if_volume",
+   "title": "麦克风 - 音量 = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "麦克风"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "音量"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_volume() == "
+  },
+  {
+   "type": "util_wait_for",
+   "title": "等待 s ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "util_wait_for",
+     "cls": "w3",
+     "value": "等待"
+    },
+    {
+     "name": "format",
+     "cls": "zc",
+     "value": "s"
+    }
+   ],
+   "code": "<highlight>'4Gsd0A0[q:EZs=RZ@I!1'</highlight>time.sleep()\n"
+  },
+  {
+   "type": "util_wait_until",
+   "title": "等待直到 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "util_wait_until",
+     "cls": "w3",
+     "value": "等待直到"
+    }
+   ],
+   "code": "<highlight>'n}|%oazoLIV:D4o~Y3C:'</highlight>while True:\n  if :\n    break\n  time.sleep(0.010)\n"
+  },
+  {
+   "type": "util_python",
+   "title": "Python 代码 #your python code",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "util_python",
+     "cls": "w3",
+     "value": "Python 代码"
+    },
+    {
+     "name": "value",
+     "cls": "PA",
+     "value": "#your python code"
+    }
+   ],
+   "code": "<highlight>'gD/Dl_bF|v2ko|dE4BKN'</highlight>#your python code\n"
+  },
+  {
+   "type": "util_python_imports",
+   "title": "Python 导入 #your python imports",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "Python 导入"
+    },
+    {
+     "name": "value",
+     "cls": "PA",
+     "value": "#your python imports"
+    }
+   ],
+   "code": "<highlight>'iy*SRJTDa{xm?IEbE5?V'</highlight>"
+  },
+  {
+   "type": "util_to_json",
+   "title": "映射转为 JSON ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "util_to_json",
+     "cls": "w3",
+     "value": "映射转为 JSON"
+    }
+   ],
+   "code": "json.dumps()"
+  },
+  {
+   "type": "util_from_json",
+   "title": "JSON 转为映射 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "util_from_json",
+     "cls": "w3",
+     "value": "JSON 转为映射"
+    }
+   ],
+   "code": "json.loads()"
+  },
+  {
+   "type": "util_thread",
+   "title": "执行函数 - 在线程中",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "util_thread",
+     "cls": "w3",
+     "value": "执行函数"
+    },
+    {
+     "name": "dropdown_event",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "util_threadsuffix",
+     "cls": "w3",
+     "value": "在线程中"
+    }
+   ],
+   "code": "<highlight>'d([9?|-aQ|9.Pu7do`|^'</highlight>#threading.Thread(target=-, daemon=True).start()"
+  },
+  {
+   "type": "counter_event",
+   "title": "每次启动 ? ?",
+   "inputs": [
+    {
+     "name": "condition",
+     "type": 1,
+     "check": [
+      "counter_event"
+     ]
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "counter_event",
+     "cls": "w3",
+     "value": "每次启动"
+    }
+   ],
+   "code": "<highlight>'jwHLiwJ9vDbr)#mJ~?S@'</highlight>"
+  },
+  {
+   "type": "usb_event",
+   "title": "每次启动 ? ?",
+   "inputs": [
+    {
+     "name": "condition",
+     "type": 1,
+     "check": [
+      "usb_event"
+     ]
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "usb_event",
+     "cls": "w3",
+     "value": "每次启动"
+    }
+   ],
+   "code": "<highlight>'15_VbY(T)FwBTzEDTMp~'</highlight>"
+  },
+  {
+   "type": "i2c_event",
+   "title": "每次启动 ? ?",
+   "inputs": [
+    {
+     "name": "condition",
+     "type": 1,
+     "check": [
+      "i2c_event"
+     ]
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "i2c_event",
+     "cls": "w3",
+     "value": "每次启动"
+    }
+   ],
+   "code": "<highlight>'IgBmz.z]]gy%*~#E^xB@'</highlight>"
+  },
+  {
+   "type": "motor_event",
+   "title": "每次启动 ? ?",
+   "inputs": [
+    {
+     "name": "condition",
+     "type": 1,
+     "check": [
+      "motor_event"
+     ]
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "motor_event",
+     "cls": "w3",
+     "value": "每次启动"
+    }
+   ],
+   "code": "<highlight>'T`oV6[KkF#JDW+wF[FHt'</highlight>"
+  },
+  {
+   "type": "output_event",
+   "title": "每次启动 ? ?",
+   "inputs": [
+    {
+     "name": "condition",
+     "type": 1,
+     "check": [
+      "output_event"
+     ]
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "output_event",
+     "cls": "w3",
+     "value": "每次启动"
+    }
+   ],
+   "code": "<highlight>'NVwtpXRlhC/f;_{zKnC7'</highlight>"
+  },
+  {
+   "type": "input_event",
+   "title": "每次启动 ? ?",
+   "inputs": [
+    {
+     "name": "condition",
+     "type": 1,
+     "check": [
+      "input_event"
+     ]
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "input_event",
+     "cls": "w3",
+     "value": "每次启动"
+    }
+   ],
+   "code": "<highlight>'#Xq~1/j?(s_h_F|n/8%!'</highlight>"
+  },
+  {
+   "type": "sound_event",
+   "title": "每次启动 ? ?",
+   "inputs": [
+    {
+     "name": "condition",
+     "type": 1,
+     "check": [
+      "sound_event"
+     ]
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "sound_event",
+     "cls": "w3",
+     "value": "每次启动"
+    }
+   ],
+   "code": "<highlight>'Z9hD#;jhF7{zw8y8!=nq'</highlight>"
+  },
+  {
+   "type": "loop_endless",
+   "title": "无限重复 do ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "DO",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "无限重复"
+    },
+    {
+     "cls": "w3",
+     "value": "do"
+    }
+   ],
+   "code": "<highlight>';6L~?qT#{dwT,%sUzOcO'</highlight>while True:\n  pass\n"
+  },
+  {
+   "type": "start_block",
+   "title": "程序开始 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "start_block",
+     "cls": "w3",
+     "value": "程序开始"
+    }
+   ],
+   "code": "<highlight>'}~IL{[~mTnTZzK#Rjk!V'</highlight>\n"
+  },
+  {
+   "type": "display_set_camera_image",
+   "title": "设置图像 - 为base64图像 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "String",
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置图像"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "为base64图像"
+    }
+   ],
+   "code": "<highlight>'P60BiMA:For4d@eS|!5S'</highlight>display.set_base64_image(\"\", )\n"
+  },
+  {
+   "type": "display_set_label_text",
+   "title": "设置标签 - 文本 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "String",
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置标签"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "文本"
+    }
+   ],
+   "code": "<highlight>'pw2Qn%eB*8A%YOFF`Iew'</highlight>display.set_attr(\".text\", str())\n"
+  },
+  {
+   "type": "display_set_input_text",
+   "title": "设置输入框 - 文本 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "String",
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置输入框"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "文本"
+    }
+   ],
+   "code": "<highlight>'1`~CQo{ZF7P(Q$|P0E2+'</highlight>display.set_attr(\".text\", str())\n"
+  },
+  {
+   "type": "display_set_gauge_value",
+   "title": "设置仪表 - 值 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置仪表"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "值"
+    }
+   ],
+   "code": "<highlight>'rAJ},t$d?Mk3Fay-hog!'</highlight>display.set_attr(\".value\", str())\n"
+  },
+  {
+   "type": "display_set_status_indicator_active",
+   "title": "设置状态指示器 - 激活 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置状态指示器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "激活"
+    }
+   ],
+   "code": "<highlight>'q$[RE[gv#A=aO7Wf{Z^U'</highlight>display.set_attr(\".active\", str().lower())\n"
+  },
+  {
+   "type": "display_set_slider_value",
+   "title": "设置滑块 - 值 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置滑块"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "值"
+    }
+   ],
+   "code": "<highlight>'ebJ[q`nREHOI5LU~4$-j'</highlight>display.set_attr(\".value\", str())\n"
+  },
+  {
+   "type": "display_set_slider_enabled",
+   "title": "设置滑块 - 启用 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置滑块"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "启用"
+    }
+   ],
+   "code": "<highlight>'ZE6yfDw{4IOUr@|R`utk'</highlight>display.set_attr(\".enabled\", str().lower())\n"
+  },
+  {
+   "type": "display_set_button_enabled",
+   "title": "设置按钮 - 启用 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置按钮"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "启用"
+    }
+   ],
+   "code": "<highlight>'i$|juhlV4H.A%ujQVccR'</highlight>display.set_attr(\".enabled\", str().lower())\n"
+  },
+  {
+   "type": "display_set_switch_checked",
+   "title": "设置开关 - checked ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置开关"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "checked"
+    }
+   ],
+   "code": "<highlight>'[B7$y;3V(b~xxnl/{.Y*'</highlight>display.set_attr(\".checked\", str().lower())\n"
+  },
+  {
+   "type": "display_set_checkbox_checked",
+   "title": "设置复选框 - checked ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置复选框"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "checked"
+    }
+   ],
+   "code": "<highlight>'/aIF:ogvJu4aoOB][Y2m'</highlight>display.set_attr(\".checked\", str().lower())\n"
+  },
+  {
+   "type": "display_event",
+   "title": "事件 checked",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "display_event",
+     "cls": "w3",
+     "value": "事件"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "checked"
+    }
+   ],
+   "code": "bool(event['checked'])"
+  },
+  {
+   "type": "display_on_button_clicked",
+   "title": "当按钮 - 被点击时：事件 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "当按钮"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "被点击时：事件"
+    }
+   ],
+   "code": "<highlight>'$QtZ@5U;36^Lv6,8_wo6'</highlight>"
+  },
+  {
+   "type": "display_on_slider_moved",
+   "title": "当滑块 - 移动时：事件 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "当滑块"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "移动时：事件"
+    }
+   ],
+   "code": "<highlight>'4f7Q6GeOrpwpI{*TZ!`?'</highlight>"
+  },
+  {
+   "type": "display_on_switch_toggled",
+   "title": "当开关 - 切换时：事件 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "当开关"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "切换时：事件"
+    }
+   ],
+   "code": "<highlight>'A[pZs|cCbKUVA8ax{EwX'</highlight>"
+  },
+  {
+   "type": "display_on_checkbox_checked",
+   "title": "当复选框 - 切换时：事件 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "当复选框"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "切换时：事件"
+    }
+   ],
+   "code": "<highlight>'f_!Wk@5_{9it)^KNWn!/'</highlight>"
+  },
+  {
+   "type": "display_on_input_accepted",
+   "title": "当输入框 - 完成输入时：事件 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "当输入框"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "完成输入时：事件"
+    }
+   ],
+   "code": "<highlight>'zhc/BntDG=l_T_#@SE($'</highlight>"
+  },
+  {
+   "type": "sound_play_audio_file",
+   "title": "01_Airplane.wav 开始播放音频文件 false",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "soundfile_name",
+     "cls": "zc",
+     "value": "01_Airplane.wav"
+    },
+    {
+     "cls": "w3",
+     "value": "开始播放音频文件"
+    },
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "checkbox",
+     "cls": "V3",
+     "value": "FALSE"
+    }
+   ],
+   "code": "<highlight>'oZ^p/WewLOKIjWgh_j2c'</highlight>"
+  },
+  {
+   "type": "sound_play_custom_audio_file",
+   "title": "? 开始播放自定义音频文件 false",
+   "inputs": [
+    {
+     "name": "path",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "开始播放自定义音频文件"
+    },
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "checkbox",
+     "cls": "V3",
+     "value": "FALSE"
+    }
+   ],
+   "code": "<highlight>'/^=z.if{[]5@}wSPW;OC'</highlight>"
+  },
+  {
+   "type": "sound_is_playing_audiofile",
+   "title": "正在播放声音",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "sound_is_playing_audiofile",
+     "cls": "w3",
+     "value": "正在播放声音"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "sound_stop_audio_file",
+   "title": "停止播放音频文件",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "sound_stop_audio_file",
+     "cls": "w3",
+     "value": "停止播放音频文件"
+    }
+   ],
+   "code": "<highlight>'?]o@_*bIgUW!wO0o~zWU'</highlight>\n"
+  },
+  {
+   "type": "voice_control_event",
+   "title": "文本",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "文本"
+    }
+   ],
+   "code": "event"
+  },
+  {
+   "type": "voice_control_on_command",
+   "title": "收到指令时：文本 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "收到指令时：文本"
+    }
+   ],
+   "code": "<highlight>'!U-A$0|@R=wO`9{fJ+U~'</highlight>"
+  },
+  {
+   "type": "util_colour_picker",
+   "title": "#0f0",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "value",
+     "cls": "u",
+     "value": "#00ff00"
+    }
+   ],
+   "code": "#00ff00"
+  },
+  {
+   "type": "import_function_return",
+   "title": "???",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "name",
+     "cls": "Gm",
+     "value": ""
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "import_function_noreturn",
+   "title": "???",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "name",
+     "cls": "Gm",
+     "value": ""
+    }
+   ],
+   "code": "<highlight>'hH*U.EL#=4~jZy~m,0UA'</highlight>\n"
+  },
+  {
+   "type": "math_convert",
+   "title": "? 转换为十六进制",
+   "inputs": [
+    {
+     "name": "NUM",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "OP",
+     "cls": "zc",
+     "value": "TO_HEX"
+    }
+   ],
+   "code": "hex(0)"
+  },
+  {
+   "type": "math_bitwise",
+   "title": "? << ?",
+   "inputs": [
+    {
+     "name": "A",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "HOOK",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "B",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "OP",
+     "cls": "zc",
+     "value": "left_shift"
+    }
+   ],
+   "code": "0 << 0"
+  },
+  {
+   "type": "math_map",
+   "title": "映射 ? ：从下限 ? 上限 ? 到下限 ? 上限 ?",
+   "inputs": [
+    {
+     "name": "NUM",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "IN_MIN",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "IN_MAX",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "OUT_MIN",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "OUT_MAX",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "映射"
+    },
+    {
+     "cls": "w3",
+     "value": "：从下限"
+    },
+    {
+     "cls": "w3",
+     "value": "上限"
+    },
+    {
+     "cls": "w3",
+     "value": "到下限"
+    },
+    {
+     "cls": "w3",
+     "value": "上限"
+    }
+   ],
+   "code": "ft_math.map_num(0, 0, 0, 0, 0)"
+  },
+  {
+   "type": "gesture_sensor",
+   "title": "手势传感器",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "gesture_sensor",
+     "cls": "w3",
+     "value": "手势传感器"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "i2c_gesture_sensor_if",
+   "title": "为手势传感器 - 颜色 RGB red = ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "为手势传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "颜色"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "rgb_red"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_rgb_red() == "
+  },
+  {
+   "type": "i2c_gesture_sensor_get",
+   "title": "获取手势传感器 - 颜色",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取手势传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "color"
+    }
+   ],
+   "code": "get_gesture_sensor_color()"
+  },
+  {
+   "type": "i2c_gesture_sensor_enable",
+   "title": "手势传感器 - 启用 灯光",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "手势传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "state",
+     "cls": "zc",
+     "value": "enable"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "light"
+    }
+   ],
+   "code": "<highlight>'JX8PL==Gw8F*8Rt%RM?j'</highlight>-.enable_light()\n"
+  },
+  {
+   "type": "util_runtime_measurement",
+   "title": "时间戳 ms",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Gm",
+     "value": "时间戳"
+    },
+    {
+     "name": "TIME",
+     "cls": "zc",
+     "value": "MILLISECOND"
+    }
+   ],
+   "code": "(time.time() * 1000)"
+  },
+  {
+   "type": "text_format",
+   "title": "格式化文本 ? “ ”",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "EMPTY",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "格式化文本"
+    },
+    {
+     "name": "plus",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "Yh",
+     "value": "data:image/png;base64,iVBORw0KGgoAAAANSU"
+    },
+    {
+     "cls": "Yh",
+     "value": "data:image/png;base64,iVBORw0KGgoAAAANSU"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "display_get_label_text",
+   "title": "获取标签 - 的文本",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取标签"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "的文本"
+    }
+   ],
+   "code": "display.get_attr(\".text\")"
+  },
+  {
+   "type": "display_get_input_text",
+   "title": "获取输入框 - 的文本",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取输入框"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "的文本"
+    }
+   ],
+   "code": "display.get_attr(\".text\")"
+  },
+  {
+   "type": "display_get_gauge_value",
+   "title": "获取仪表 - 的值",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取仪表"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "的值"
+    }
+   ],
+   "code": "display.get_attr(\".value\")"
+  },
+  {
+   "type": "display_get_status_indicator_state",
+   "title": "状态指示器 - 是否激活",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "状态指示器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "是否激活"
+    }
+   ],
+   "code": "display.get_attr(\".active\")"
+  },
+  {
+   "type": "display_get_slider_value",
+   "title": "获取滑块 - 的值",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取滑块"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "的值"
+    }
+   ],
+   "code": "display.get_attr(\".value\")"
+  },
+  {
+   "type": "display_get_slider_state",
+   "title": "滑块 - 是否启用",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "滑块"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "是否启用"
+    }
+   ],
+   "code": "display.get_attr(\".enabled\")"
+  },
+  {
+   "type": "display_get_button_state",
+   "title": "按钮 - 是否启用",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "按钮"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "是否启用"
+    }
+   ],
+   "code": "display.get_attr(\".enabled\")"
+  },
+  {
+   "type": "display_get_switch_state",
+   "title": "开关 - 是否 checked",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "开关"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "是否"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "checked"
+    }
+   ],
+   "code": "display.get_attr(\".checked\")"
+  },
+  {
+   "type": "display_get_checkbox_state",
+   "title": "复选框 - 是否 checked",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "复选框"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "是否"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "checked"
+    }
+   ],
+   "code": "display.get_attr(\".checked\")"
+  },
+  {
+   "type": "ft_cloud_mqtt_connect",
+   "title": "ft cloud fischertechnik cloud 连接",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "fischertechnik cloud 连接"
+    }
+   ],
+   "code": "<highlight>'Rqbuy9Asm-JQw`Xg9HB*'</highlight>FTCloudClient.getInstance().connect()\n"
+  },
+  {
+   "type": "ft_cloud_mqtt_disconnect",
+   "title": "ft cloud fischertechnik cloud 断开连接",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "fischertechnik cloud 断开连接"
+    }
+   ],
+   "code": "<highlight>'hpsbz36}n%W?7:caVId;'</highlight>FTCloudClient.getInstance().disconnect()\n"
+  },
+  {
+   "type": "ft_cloud_mqtt_publish",
+   "title": "ft cloud fischertechnik cloud 将消息载荷发布到 /j1/txt/<txtid>/i/alert ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "fischertechnik cloud 将消息载荷发布到"
+    },
+    {
+     "name": "topic",
+     "cls": "zc",
+     "value": "/j1/txt/<txtid>/i/alert"
+    }
+   ],
+   "code": "<highlight>'@/RkKCN_%@(1tO$,cedh'</highlight>FTCloudClient.getInstance().publish(\"/j1/txt/\" + str(CONTROLLER_ID) + \"/i/alert\", )\n"
+  },
+  {
+   "type": "ft_cloud_mqtt_subscribe",
+   "title": "ft cloud fischertechnik cloud 订阅 /j1/txt/<txtid>/c/bme680 ：消息载荷 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "fischertechnik cloud 订阅"
+    },
+    {
+     "name": "topic",
+     "cls": "zc",
+     "value": "/j1/txt/<txtid>/c/bme680"
+    },
+    {
+     "cls": "w3",
+     "value": "：消息载荷"
+    }
+   ],
+   "code": "<highlight>'zJ5_szeNclg`Tu]Q3_XX'</highlight>"
+  },
+  {
+   "type": "ft_cloud_mqtt_is_connected",
+   "title": "ft cloud 已连接到 fischertechnik cloud",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "已连接到 fischertechnik cloud"
+    }
+   ],
+   "code": "FTCloudClient.getInstance().is_connected()"
+  },
+  {
+   "type": "mqtt_client",
+   "title": "MQTT 客户端创建：WebSocket false",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "MQTT 客户端创建：WebSocket"
+    },
+    {
+     "name": "websockets",
+     "cls": "V3",
+     "value": "FALSE"
+    }
+   ],
+   "code": "MqttClient()"
+  },
+  {
+   "type": "mqtt_connect",
+   "title": "MQTT 客户端 ? 连接：主机 ? 端口 ? 用户名 ? 密码 ?",
+   "inputs": [
+    {
+     "name": "name",
+     "type": 1,
+     "check": [
+      "mqttClient"
+     ]
+    },
+    {
+     "name": "host",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "port",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "user",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "password",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "MQTT 客户端"
+    },
+    {
+     "cls": "w3",
+     "value": "连接：主机"
+    },
+    {
+     "cls": "w3",
+     "value": "端口"
+    },
+    {
+     "cls": "w3",
+     "value": "用户名"
+    },
+    {
+     "cls": "w3",
+     "value": "密码"
+    }
+   ],
+   "code": "<highlight>'k#^I3Tsx8UrFtbK7r`63'</highlight>.connect(host=, port=, user=, password=)\n"
+  },
+  {
+   "type": "mqtt_disconnect",
+   "title": "MQTT 客户端 ? 断开连接",
+   "inputs": [
+    {
+     "name": "name",
+     "type": 1,
+     "check": [
+      "mqttClient"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "MQTT 客户端"
+    },
+    {
+     "cls": "w3",
+     "value": "断开连接"
+    }
+   ],
+   "code": "<highlight>'+Qwgedt`4Mlcf.Vwrmmk'</highlight>.disconnect()\n"
+  },
+  {
+   "type": "mqtt_publish",
+   "title": "MQTT 客户端 ? 发布：主题 ? 消息载荷 ? qos ? 保留 ?",
+   "inputs": [
+    {
+     "name": "name",
+     "type": 1,
+     "check": [
+      "mqttClient"
+     ]
+    },
+    {
+     "name": "topic",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "qos",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "retain",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "MQTT 客户端"
+    },
+    {
+     "cls": "w3",
+     "value": "发布：主题"
+    },
+    {
+     "cls": "w3",
+     "value": "消息载荷"
+    },
+    {
+     "cls": "w3",
+     "value": "qos"
+    },
+    {
+     "cls": "w3",
+     "value": "保留"
+    }
+   ],
+   "code": "<highlight>'hq4Sa4$9V/1Q9ZPwL:Oe'</highlight>.publish(topic=, payload=, qos=, retain=)\n"
+  },
+  {
+   "type": "mqtt_publish_return",
+   "title": "MQTT 客户端 ? 发布：主题 ? 消息载荷 ? qos ? 保留 ?",
+   "inputs": [
+    {
+     "name": "name",
+     "type": 1,
+     "check": [
+      "mqttClient"
+     ]
+    },
+    {
+     "name": "topic",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "qos",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "retain",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "MQTT 客户端"
+    },
+    {
+     "cls": "w3",
+     "value": "发布：主题"
+    },
+    {
+     "cls": "w3",
+     "value": "消息载荷"
+    },
+    {
+     "cls": "w3",
+     "value": "qos"
+    },
+    {
+     "cls": "w3",
+     "value": "保留"
+    }
+   ],
+   "code": ".publish(topic=, payload=, qos=, retain=)"
+  },
+  {
+   "type": "mqtt_will_set",
+   "title": "MQTT 客户端 ? 设置遗嘱消息：主题 ? 消息载荷 ? qos ? 保留 ?",
+   "inputs": [
+    {
+     "name": "name",
+     "type": 1,
+     "check": [
+      "mqttClient"
+     ]
+    },
+    {
+     "name": "topic",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "qos",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "retain",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "MQTT 客户端"
+    },
+    {
+     "cls": "w3",
+     "value": "设置遗嘱消息：主题"
+    },
+    {
+     "cls": "w3",
+     "value": "消息载荷"
+    },
+    {
+     "cls": "w3",
+     "value": "qos"
+    },
+    {
+     "cls": "w3",
+     "value": "保留"
+    }
+   ],
+   "code": "<highlight>'T*?39.JJl,!TZewX%l`O'</highlight>.will_set(topic=, payload=, qos=, retain=)\n"
+  },
+  {
+   "type": "mqtt_subscribe",
+   "title": "MQTT 客户端 ? 订阅：回调 - 主题 ? qos ?",
+   "inputs": [
+    {
+     "name": "name",
+     "type": 1,
+     "check": [
+      "mqttClient"
+     ]
+    },
+    {
+     "name": "topic",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "qos",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "MQTT 客户端"
+    },
+    {
+     "cls": "w3",
+     "value": "订阅：回调"
+    },
+    {
+     "name": "function",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "主题"
+    },
+    {
+     "cls": "w3",
+     "value": "qos"
+    }
+   ],
+   "code": "<highlight>'H[s3%KH5PfNWw:;qt?(P'</highlight>.subscribe(topic=, callback=-, qos=)\n"
+  },
+  {
+   "type": "mqtt_event",
+   "title": "消息 payload",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "mqtt_event",
+     "cls": "w3",
+     "value": "消息"
+    },
+    {
+     "name": "dropdown_event",
+     "cls": "zc",
+     "value": "payload"
+    }
+   ],
+   "code": "message.payload.decode(\"utf-8\")"
+  },
+  {
+   "type": "mqtt_is_connected",
+   "title": "MQTT 客户端 ? 已连接",
+   "inputs": [
+    {
+     "name": "name",
+     "type": 1,
+     "check": [
+      "mqttClient"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "MQTT 客户端"
+    },
+    {
+     "cls": "w3",
+     "value": "已连接"
+    }
+   ],
+   "code": ".is_connected()"
+  },
+  {
+   "type": "mqtt_callback",
+   "title": "订阅回调 mqtt_callback ：消息 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "订阅回调"
+    },
+    {
+     "name": "name",
+     "cls": "o1",
+     "value": "mqtt_callback"
+    },
+    {
+     "cls": "w3",
+     "value": "：消息"
+    }
+   ],
+   "code": "<highlight>'MVo^nqN3ur9I9sCaabr-'</highlight>"
+  },
+  {
+   "type": "ml_image_classifier",
+   "err": "FieldDropdown options must not be an empty array."
+  },
+  {
+   "type": "ml_object_detector",
+   "title": "为 sorting line 创建目标检测器",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "为"
+    },
+    {
+     "name": "machine_learning_model",
+     "cls": "zc",
+     "value": "sorting_line"
+    },
+    {
+     "cls": "w3",
+     "value": "创建目标检测器"
+    }
+   ],
+   "code": "ObjectDetector('/opt/ft/workspaces/machine-learning/object-detection/sorting_line/model.tflite', '/opt/ft/workspaces/machine-learning/object-detection/sorting_line/labels.txt')"
+  },
+  {
+   "type": "ml_process_image",
+   "title": "使用 ? 处理图像 ?",
+   "inputs": [
+    {
+     "name": "name",
+     "type": 1,
+     "check": [
+      "MachineLearning"
+     ]
+    },
+    {
+     "name": "image_field",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "使用"
+    },
+    {
+     "cls": "w3",
+     "value": "处理图像"
+    }
+   ],
+   "code": ".process_image()"
+  },
+  {
+   "type": "ml_is_label_in_result",
+   "title": "标签 - sorting line 是否在结果 ? 中",
+   "inputs": [
+    {
+     "name": "hook",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "machine_learning_result",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "标签"
+    },
+    {
+     "name": "machine_learning_label",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "machine_learning_model",
+     "cls": "zc",
+     "value": "sorting_line"
+    },
+    {
+     "cls": "w3",
+     "value": "是否在结果"
+    },
+    {
+     "cls": "w3",
+     "value": "中"
+    }
+   ],
+   "code": "'-' in "
+  },
+  {
+   "type": "ml_is_custom_label_in_result",
+   "title": "标签 ? 是否在结果 ? 中",
+   "inputs": [
+    {
+     "name": "machine_learning_label",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "machine_learning_result",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "标签"
+    },
+    {
+     "cls": "w3",
+     "value": "是否在结果"
+    },
+    {
+     "cls": "w3",
+     "value": "中"
+    }
+   ],
+   "code": " in "
+  },
+  {
+   "type": "ml_get_result_for_label",
+   "title": "在结果 ? 中获取标签 的 probability - sorting line",
+   "inputs": [
+    {
+     "name": "machine_learning_result",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "hook",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "在结果"
+    },
+    {
+     "cls": "w3",
+     "value": "中获取标签"
+    },
+    {
+     "cls": "w3",
+     "value": "的"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "probability"
+    },
+    {
+     "name": "machine_learning_label",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "name": "machine_learning_model",
+     "cls": "zc",
+     "value": "sorting_line"
+    }
+   ],
+   "code": "['-']['probability']"
+  },
+  {
+   "type": "ml_get_result_for_custom_label",
+   "title": "在结果 ? 中获取标签 ? 的 probability",
+   "inputs": [
+    {
+     "name": "machine_learning_result",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "machine_learning_label",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "在结果"
+    },
+    {
+     "cls": "w3",
+     "value": "中获取标签"
+    },
+    {
+     "cls": "w3",
+     "value": "的"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "probability"
+    }
+   ],
+   "code": "[]['probability']"
+  },
+  {
+   "type": "ml_get_property_of_object",
+   "title": "获取结果项 ? 的 probability",
+   "inputs": [
+    {
+     "name": "machine_learning_result",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "获取结果项"
+    },
+    {
+     "cls": "w3",
+     "value": "的"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "probability"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "ml_custom_image_classifier",
+   "title": "创建图像分类器：路径 default 模型 model.tflite 标签 labels.txt",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "创建图像分类器：路径"
+    },
+    {
+     "name": "path",
+     "cls": "o1",
+     "value": "default"
+    },
+    {
+     "cls": "w3",
+     "value": "模型"
+    },
+    {
+     "name": "machine_learning_model",
+     "cls": "o1",
+     "value": "model.tflite"
+    },
+    {
+     "cls": "w3",
+     "value": "标签"
+    },
+    {
+     "name": "machine_learning_label",
+     "cls": "o1",
+     "value": "labels.txt"
+    }
+   ],
+   "code": "ImageClassifier('default/model.tflite', 'default/labels.txt')"
+  },
+  {
+   "type": "ml_custom_object_detector",
+   "title": "创建目标检测器：路径 default 模型 model.tflite 标签 labels.txt",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "创建目标检测器：路径"
+    },
+    {
+     "name": "path",
+     "cls": "o1",
+     "value": "default"
+    },
+    {
+     "cls": "w3",
+     "value": "模型"
+    },
+    {
+     "name": "machine_learning_model",
+     "cls": "o1",
+     "value": "model.tflite"
+    },
+    {
+     "cls": "w3",
+     "value": "标签"
+    },
+    {
+     "name": "machine_learning_label",
+     "cls": "o1",
+     "value": "labels.txt"
+    }
+   ],
+   "code": "ObjectDetector('default/model.tflite', 'default/labels.txt')"
+  },
+  {
+   "type": "open_data_file",
+   "title": "以模式 read 打开文件 -",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "以模式"
+    },
+    {
+     "name": "mode",
+     "cls": "zc",
+     "value": "r"
+    },
+    {
+     "cls": "w3",
+     "value": "打开文件"
+    },
+    {
+     "name": "path",
+     "cls": "zc",
+     "value": "-"
+    }
+   ],
+   "code": "open(os.path.join(os.path.dirname(__file__), '-'), 'r', encoding='utf8')"
+  },
+  {
+   "type": "open_file",
+   "title": "以模式 read 打开文件 ?",
+   "inputs": [
+    {
+     "name": "path",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "以模式"
+    },
+    {
+     "name": "mode",
+     "cls": "zc",
+     "value": "r"
+    },
+    {
+     "cls": "w3",
+     "value": "打开文件"
+    }
+   ],
+   "code": "open(, 'r', encoding='utf8')"
+  },
+  {
+   "type": "exist_file",
+   "title": "? 是否存在",
+   "inputs": [
+    {
+     "name": "path",
+     "type": 1,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "是否存在"
+    }
+   ],
+   "code": "exists()"
+  },
+  {
+   "type": "read_file",
+   "title": "以文本方式读取文件 ?",
+   "inputs": [
+    {
+     "name": "name",
+     "type": 1,
+     "check": [
+      "File"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "以文本方式读取文件"
+    }
+   ],
+   "code": ".read()"
+  },
+  {
+   "type": "read_file_as_list",
+   "title": "按行读取文件 ? 为列表",
+   "inputs": [
+    {
+     "name": "name",
+     "type": 1,
+     "check": [
+      "File"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "按行读取文件"
+    },
+    {
+     "cls": "w3",
+     "value": "为列表"
+    }
+   ],
+   "code": "[line[:-1] for line in .readlines()]"
+  },
+  {
+   "type": "write_file",
+   "title": "将 ? 写入文件 ? 末尾换行 true",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "name",
+     "type": 1,
+     "check": [
+      "File"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "将"
+    },
+    {
+     "cls": "w3",
+     "value": "写入文件"
+    },
+    {
+     "cls": "w3",
+     "value": "末尾换行"
+    },
+    {
+     "name": "new line",
+     "cls": "V3",
+     "value": "TRUE"
+    }
+   ],
+   "code": "<highlight>'+wMTHvqf^RD^%^W0zy8,'</highlight>.write( + '\\n')\n"
+  },
+  {
+   "type": "write_file_as_list",
+   "title": "将列表 ? 按行写入文件 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Array"
+     ]
+    },
+    {
+     "name": "name",
+     "type": 1,
+     "check": [
+      "File"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "将列表"
+    },
+    {
+     "cls": "w3",
+     "value": "按行写入文件"
+    }
+   ],
+   "code": "<highlight>'tf#{HaQ{$r#[{,L+F*M7'</highlight>for line in :\n\t.write(line + '\\n')\n"
+  },
+  {
+   "type": "close_file",
+   "title": "关闭文件 ?",
+   "inputs": [
+    {
+     "name": "name",
+     "type": 1,
+     "check": [
+      "File"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "关闭文件"
+    }
+   ],
+   "code": "<highlight>'ANK_Y@]SC9x`eC7Oc[|h'</highlight>.close()\n"
+  },
+  {
+   "type": "flush_file",
+   "title": "刷新文件 ?",
+   "inputs": [
+    {
+     "name": "name",
+     "type": 1,
+     "check": [
+      "File"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "刷新文件"
+    }
+   ],
+   "code": "<highlight>'|,J[mW=E$]qC?he]%sFO'</highlight>.flush()\n"
+  },
+  {
+   "type": "make_directory",
+   "title": "创建目录 ?",
+   "inputs": [
+    {
+     "name": "path",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "创建目录"
+    }
+   ],
+   "code": "<highlight>'@]nt*DoBABY[-tN?t(-!'</highlight>os.makedirs(, exist_ok=True)\n"
+  },
+  {
+   "type": "dictionary_get_keys",
+   "title": "在映射 ? 中获取键列表",
+   "inputs": [
+    {
+     "name": "DICT",
+     "type": 1,
+     "check": [
+      "String",
+      "Array"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "在映射"
+    },
+    {
+     "cls": "w3",
+     "value": "中获取键列表"
+    }
+   ],
+   "code": "{}.keys()"
+  },
+  {
+   "type": "dictionary_get_item",
+   "title": "在映射 ? 中获取键 ? 的元素",
+   "inputs": [
+    {
+     "name": "DICT",
+     "type": 1,
+     "check": [
+      "String",
+      "Array"
+     ]
+    },
+    {
+     "name": "KEY",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "在映射"
+    },
+    {
+     "cls": "w3",
+     "value": "中获取键"
+    },
+    {
+     "cls": "w3",
+     "value": "的元素"
+    }
+   ],
+   "code": "{}[None]"
+  },
+  {
+   "type": "dictionary_set_item",
+   "title": "在映射 ? 中为键 ? 设置元素 ?",
+   "inputs": [
+    {
+     "name": "DICT",
+     "type": 1,
+     "check": [
+      "String",
+      "Array"
+     ]
+    },
+    {
+     "name": "KEY",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "VALUE",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "在映射"
+    },
+    {
+     "cls": "w3",
+     "value": "中为键"
+    },
+    {
+     "cls": "w3",
+     "value": "设置元素"
+    }
+   ],
+   "code": "<highlight>'E9|~lXidw.1^..Z#osGz'</highlight>{}[None] = None\n"
+  },
+  {
+   "type": "http_off_payload_request",
+   "title": "GET 请求 ? ：请求头 ?",
+   "inputs": [
+    {
+     "name": "url",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "headers",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "methods",
+     "cls": "zc",
+     "value": "get"
+    },
+    {
+     "cls": "w3",
+     "value": "请求"
+    },
+    {
+     "cls": "w3",
+     "value": "：请求头"
+    }
+   ],
+   "code": "HttpRequests.get_request(,)"
+  },
+  {
+   "type": "http_payload_request",
+   "title": "POST 请求 ? ：请求头 ? 消息载荷 ?",
+   "inputs": [
+    {
+     "name": "url",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "headers",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    },
+    {
+     "name": "payload",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "methods",
+     "cls": "zc",
+     "value": "post"
+    },
+    {
+     "cls": "w3",
+     "value": "请求"
+    },
+    {
+     "cls": "w3",
+     "value": "：请求头"
+    },
+    {
+     "cls": "w3",
+     "value": "消息载荷"
+    }
+   ],
+   "code": "HttpRequests.post_request(,,)"
+  },
+  {
+   "type": "remote_control_event",
+   "title": "事件 按钮",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "remote_control_event",
+     "cls": "w3",
+     "value": "事件"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "touch"
+    }
+   ],
+   "code": "event[\"touch\"] == \"start\""
+  },
+  {
+   "type": "remote_control_set_chart",
+   "title": "设置图表 - x： ? y： ?",
+   "inputs": [
+    {
+     "name": "x",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "y",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置图表"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "x："
+    },
+    {
+     "cls": "w3",
+     "value": "y："
+    }
+   ],
+   "code": "<highlight>'B}TH]Rtz]hPzONa(C=5o'</highlight>"
+  },
+  {
+   "type": "remote_control_set_label",
+   "title": "设置标签 - 文本 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "String",
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置标签"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "文本"
+    }
+   ],
+   "code": "<highlight>')HB,qB:9/mf3HoY%AJVs'</highlight>"
+  },
+  {
+   "type": "remote_control_set_image",
+   "title": "设置图像 - base64 图像 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "String"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置图像"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "base64 图像"
+    }
+   ],
+   "code": "<highlight>'PQV5!*HtEa-;9bYmf8/J'</highlight>"
+  },
+  {
+   "type": "remote_control_set_indicator",
+   "title": "设置状态指示灯 - 激活 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Boolean"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置状态指示灯"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "激活"
+    }
+   ],
+   "code": "<highlight>'p7nP~x26zf#-qF1ocj[s'</highlight>"
+  },
+  {
+   "type": "remote_control_button_on_click",
+   "title": "当按钮 - 被点击时：事件 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "当按钮"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "被点击时：事件"
+    }
+   ],
+   "code": "<highlight>'5xv?^*Q4jY!Iuk+P$!cd'</highlight>"
+  },
+  {
+   "type": "remote_control_slider_on_move",
+   "title": "当滑块 - 被移动时：事件 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "当滑块"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "被移动时：事件"
+    }
+   ],
+   "code": "<highlight>'[L=`6L9vo9ngP*/hw2Zu'</highlight>"
+  },
+  {
+   "type": "remote_control_joystick_on_move",
+   "title": "当摇杆 - 被移动时：事件 ?",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    },
+    {
+     "name": "statement",
+     "type": 3,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "当摇杆"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "被移动时：事件"
+    }
+   ],
+   "code": "<highlight>'irE(KH90g5Q6XOeh#1x8'</highlight>"
+  },
+  {
+   "type": "rgb_color_sensor",
+   "title": "RGB 颜色传感器",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "name": "rgb_color_sensor",
+     "cls": "w3",
+     "value": "RGB 颜色传感器"
+    }
+   ],
+   "code": ""
+  },
+  {
+   "type": "i2c_rgb_color_sensor_get",
+   "title": "获取 RGB 颜色传感器 - 编号 ? 颜色",
+   "inputs": [
+    {
+     "name": "index",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取 RGB 颜色传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "编号"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "color"
+    }
+   ],
+   "code": "get_rgbw_sensor_color( - 1)"
+  },
+  {
+   "type": "i2c_rgb_color_sensor_if",
+   "title": "为 RGB 颜色传感器 - 编号 ? 颜色 RGB red = ?",
+   "inputs": [
+    {
+     "name": "index",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "为 RGB 颜色传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "编号"
+    },
+    {
+     "cls": "w3",
+     "value": "颜色"
+    },
+    {
+     "name": "property_name",
+     "cls": "zc",
+     "value": "rgb_red"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_rgb_red( - 1) == "
+  },
+  {
+   "type": "i2c_rgb_color_sensor_set_measurement_time",
+   "title": "设置 RGB 颜色传感器 - 编号 ? 测量时间 40 ms",
+   "inputs": [
+    {
+     "name": "index",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置 RGB 颜色传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "编号"
+    },
+    {
+     "cls": "w3",
+     "value": "测量时间"
+    },
+    {
+     "name": "time",
+     "cls": "zc",
+     "value": "0"
+    },
+    {
+     "cls": "w3",
+     "value": "ms"
+    }
+   ],
+   "code": "<highlight>'=^fPPWl$|E$T2@XATbT]'</highlight>-.set_measurement_time( - 1, 0)\n"
+  },
+  {
+   "type": "i2c_rgb_color_sensor_set_led",
+   "title": "设置 RGB 颜色传感器 - 编号 ? LED 全部 亮度 ?",
+   "inputs": [
+    {
+     "name": "index",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置 RGB 颜色传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "编号"
+    },
+    {
+     "cls": "w3",
+     "value": "LED"
+    },
+    {
+     "name": "led",
+     "cls": "zc",
+     "value": "-1"
+    },
+    {
+     "cls": "w3",
+     "value": "亮度"
+    }
+   ],
+   "code": "<highlight>'h]l+m%d0}8mQUpf(Q2|+'</highlight>-.set_led_brightness( - 1, , -1)\n"
+  },
+  {
+   "type": "i2c_rgb_color_sensor_if_led",
+   "title": "为 RGB 颜色传感器 - 编号 ? LED 1 亮度 = ?",
+   "inputs": [
+    {
+     "name": "index",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "为 RGB 颜色传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "编号"
+    },
+    {
+     "cls": "w3",
+     "value": "LED"
+    },
+    {
+     "name": "led",
+     "cls": "zc",
+     "value": "0"
+    },
+    {
+     "cls": "w3",
+     "value": "亮度"
+    },
+    {
+     "name": "compare_operation",
+     "cls": "zc",
+     "value": "=="
+    }
+   ],
+   "code": "-.get_led_brightness( - 1, 0) == "
+  },
+  {
+   "type": "i2c_rgb_color_sensor_set_led_auto_off",
+   "title": "设置 RGB 颜色传感器 - 全部 LED 在 ? 秒后自动关闭",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "image_field",
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "设置 RGB 颜色传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "全部 LED 在"
+    },
+    {
+     "cls": "w3",
+     "value": "秒后自动关闭"
+    }
+   ],
+   "code": "<highlight>'HY3olJ8O0xM2!_bu$#;:'</highlight>-.set_auto_off_light()\n"
+  },
+  {
+   "type": "i2c_rgb_color_sensor_get_count",
+   "title": "获取 RGB 颜色传感器 - 数量",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "获取 RGB 颜色传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "数量"
+    }
+   ],
+   "code": "-.get_sensor_count()"
+  },
+  {
+   "type": "i2c_rgb_color_sensor_shadow_led_value",
+   "title": "0",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "NUM",
+     "cls": "wE",
+     "value": "0"
+    }
+   ],
+   "code": "0"
+  },
+  {
+   "type": "i2c_rgb_color_sensor_shadow_index_value",
+   "title": "1",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "NUM",
+     "cls": "wE",
+     "value": "1"
+    }
+   ],
+   "code": "1"
+  },
+  {
+   "type": "neural_network_execute",
+   "title": "使用输入执行神经网络 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "neural_network_execute",
+     "cls": "w3",
+     "value": "使用输入执行神经网络"
+    }
+   ],
+   "code": "execute_NN(0)"
+  },
+  {
+   "type": "neural_network_get_values",
+   "title": "获取神经网络中间值 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "neural_network_get_values",
+     "cls": "w3",
+     "value": "获取神经网络中间值"
+    }
+   ],
+   "code": "get_intermediate(0)"
+  },
+  {
+   "type": "dictionary_create",
+   "title": "???",
+   "inputs": [],
+   "fields": [],
+   "code": "{}"
+  },
+  {
+   "type": "dictionary_create_item",
+   "title": "键 key 和值 ?",
+   "inputs": [
+    {
+     "name": "value",
+     "type": 1,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "w3",
+     "value": "键"
+    },
+    {
+     "name": "key",
+     "cls": "o1",
+     "value": "key"
+    },
+    {
+     "cls": "w3",
+     "value": "和值"
+    }
+   ],
+   "code": "{'key': None}"
+  },
+  {
+   "type": "util_comment",
+   "title": "注释 ...",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "name": "util_comment",
+     "cls": "w3",
+     "value": "注释"
+    },
+    {
+     "name": "value",
+     "cls": "Um",
+     "value": "..."
+    }
+   ],
+   "code": "<highlight>'?$NXoqTENI@NygbkITgK'</highlight>\"\"\"\n...\n\"\"\"\n"
+  },
+  {
+   "type": "i2c_gesture_sensor_if_color",
+   "title": "为手势传感器 - 颜色 红色",
+   "inputs": [
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "为手势传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "颜色"
+    },
+    {
+     "name": "value",
+     "cls": "zc",
+     "value": "red"
+    }
+   ],
+   "code": "get_gesture_sensor_color() == 'red'"
+  },
+  {
+   "type": "i2c_rgb_color_sensor_if_color",
+   "title": "为 RGB 颜色传感器 - 编号 ? 颜色 红色",
+   "inputs": [
+    {
+     "name": "index",
+     "type": 1,
+     "check": [
+      "Number"
+     ]
+    },
+    {
+     "name": "",
+     "type": 5,
+     "check": null
+    }
+   ],
+   "fields": [
+    {
+     "cls": "Yh",
+     "value": "./assets/npx-robo-pro-coding/modules/blo"
+    },
+    {
+     "cls": "w3",
+     "value": "为 RGB 颜色传感器"
+    },
+    {
+     "name": "instance_name",
+     "cls": "zc",
+     "value": "-"
+    },
+    {
+     "cls": "w3",
+     "value": "编号"
+    },
+    {
+     "cls": "w3",
+     "value": "颜色"
+    },
+    {
+     "name": "value",
+     "cls": "zc",
+     "value": "red"
+    }
+   ],
+   "code": "get_rgbw_sensor_color( - 1) == 'red'"
+  }
+ ]
+}

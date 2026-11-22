@@ -1,0 +1,34 @@
+<xml xmlns="https://developers.google.com/blockly/xml" version="23">
+  <block type="start_block" id="ftStart0000000001" deletable="false" x="-463" y="-189">
+    <statement name="statement">
+      <block type="util_python" id="ftPythonInit0001">
+        <field name="value">import time
+from fischertechnik.controller.Motor import Motor
+
+# 配置：Motor-0 上接电机 = M1
+PIN = 0
+SPEED = 100
+
+M1 = txt_factory.motor_factory.create_motor(TXT_M, PIN)</field>
+        <next>
+          <block type="loop_endless" id="ftLoopEndless001">
+            <statement name="DO">
+              <block type="util_python" id="ftPythonDrive001">
+                <field name="value">M1.set_speed(int(SPEED), Motor.CW)
+M1.start()
+time.sleep(1)
+
+M1.set_speed(int(SPEED), Motor.CCW)
+M1.start()
+time.sleep(1)
+
+M1.stop()
+time.sleep(0.5)</field>
+              </block>
+            </statement>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>

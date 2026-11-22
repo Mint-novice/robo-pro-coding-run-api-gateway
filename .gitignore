@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# test / tooling
+.pytest_cache/
+.coverage
+htmlcov/
+
+# bridge runtime
+_bridge/
+*.log
+shot.png
+*.out.json
+
+# editors
+.vscode/
+.idea/
+.DS_Store
+
+# local scratch
+_rpcprofile/
+_check/

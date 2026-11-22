@@ -1,0 +1,22 @@
+<xml xmlns="https://developers.google.com/blockly/xml" version="23">
+  <block type="txt4_controller" id="mJYo}LO?JWK)~bn/l`cz" x="0" y="0">
+    <mutation>
+      <arg type="Input" name="Input-0" value="-"/>
+      <arg type="Output" name="Output-0" value="-"/>
+      <arg type="Motor" name="Motor-0" value="-"/>
+      <arg type="Servomotor" name="Servomotor-0" value="-"/>
+      <arg type="Counter" name="Counter-0" value="-"/>
+      <arg type="I2C" name="I2C-0" value="-"/>
+      <arg type="USB" name="USB-0" value="-"/>
+    </mutation>
+    <field name="mode">0</field>
+    <field name="controller_name">TXT</field>
+    <field name="Input-0">-</field>
+    <field name="Output-0">-</field>
+    <field name="Motor-0">-</field>
+    <field name="Servomotor-0">-</field>
+    <field name="Counter-0">-</field>
+    <field name="I2C-0">-</field>
+    <field name="USB-0">-</field>
+  </block>
+</xml>
