@@ -66,7 +66,7 @@ into an OS dialog.
 
 ## `verify` complains about an unknown block type
 
-The block was typed by hand and does not exist in the app. Compare against
+The block was typed by hand and does not exist in ROBO Pro Coding 6.5.4. Compare against
 
 ```bash
 ftg blocks <keyword>

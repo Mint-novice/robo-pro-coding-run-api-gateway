@@ -4,6 +4,9 @@
 [![python](https://img.shields.io/badge/python-3.9%2B-blue)](pyproject.toml)
 [![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
+**目标版本：ROBO Pro Coding 6.5.4**（Electron 31.7.7, TXT 4.0）。块标识与生成代码是该版本的快照，
+软件升级后用 `bridge/dumpblocks.js` 重新导出。
+
 用 Python 生成、校验、驱动**慧鱼 ROBO Pro Coding** 工程（`.ft`）。
 `.ft` 就是 JSON + Blockly XML + Python 的 ZIP——所以机器人程序可以像源码一样生成、比对、测试。
 
@@ -75,7 +78,7 @@ node bridge\cdp.js shot proof.png
 
 | 层次 | 证据 |
 |---|---|
-| 容器/元数据 | 单元测试、extract→pack 往返 |
+| 容器/元数据 | 单元测试、extract→pack 往返（应用 6.5.4） |
 | 块 XML | 运行中的应用内，用它自己的 Blockly 解析 |
 | 生成的 Python | 由应用的 `pythonGenerator` 现场产出 |
 | 实机 | TXT 4.0：M1 电机转、M1 上的 LED 闪 |

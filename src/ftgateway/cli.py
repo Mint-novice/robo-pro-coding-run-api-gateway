@@ -16,7 +16,7 @@ from .blocks import (
     build_python_project,
 )
 from .project import CONTROLLERS, MODES, Project, ProjectError
-from .verify import verify
+from .verify import catalog, verify
 
 
 def _print(text: str = "") -> None:
@@ -27,6 +27,7 @@ def _print(text: str = "") -> None:
 def cmd_info(args: argparse.Namespace) -> int:
     project = Project.load(args.file)
     cfg = project.config
+    _print(f"target     : ROBO Pro Coding {catalog().get('appVersion', 'unknown')}")
     _print(f"file       : {args.file}")
     _print(f"project    : {json.dumps(cfg, ensure_ascii=False)}")
     _print(f"entries    : {len(project.items)}")
@@ -192,7 +193,10 @@ def build_parser() -> argparse.ArgumentParser:
         prog="ftg",
         description="Fischertechnik ROBO Pro Coding (.ft) project toolkit",
     )
-    parser.add_argument("--version", action="version", version=f"ftg {__version__}")
+    app = catalog().get("appVersion", "unknown")
+    parser.add_argument(
+        "--version", action="version", version=f"ftg {__version__} (ROBO Pro Coding {app})"
+    )
     sub = parser.add_subparsers(dest="command", required=True)
 
     p = sub.add_parser("info", help="show structure and metadata")

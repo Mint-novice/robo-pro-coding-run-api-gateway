@@ -1,6 +1,6 @@
 # `.ft` container format
 
-Observed on ROBO Pro Coding 6.5.x (TXT 4.0). Everything below is verified by
+Observed on **ROBO Pro Coding 6.5.4** (Electron 31.7.7, TXT 4.0). Everything below is verified by
 reading files the application itself wrote.
 
 ## ZIP layout

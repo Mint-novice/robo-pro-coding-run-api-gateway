@@ -17,6 +17,9 @@ lib/controller.py       generated from that block
 
 `mode`: `ADVANCED` (blocks) or `PROFESSIONAL` (Python only). Details: `docs/format.md`.
 
+Everything here targets **ROBO Pro Coding 6.5.4**. The block data in
+`src/ftgateway/data/` is a snapshot of that build; other versions may differ.
+
 ## Setup
 
 ```bash

@@ -10,7 +10,7 @@
 
 ## 2. 数据文件从哪来
 
-这两个 JSON 是在**用户本机已安装的 ROBO Pro Coding 应用**中，由 `bridge/dumpblocks.js`
+这两个 JSON 是在**用户本机已安装的 ROBO Pro Coding 6.5.4 应用**中，由 `bridge/dumpblocks.js`
 读取该应用自身已加载的 Blockly 注册表后导出的，内容包括：
 
 - 块类型标识（如 `motor_set_speed`）、输入名（如 `DO`、`speed`）、字段名

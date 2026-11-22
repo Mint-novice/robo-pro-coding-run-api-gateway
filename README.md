@@ -4,6 +4,9 @@
 [![python](https://img.shields.io/badge/python-3.9%2B-blue)](pyproject.toml)
 [![license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
+**Targets ROBO Pro Coding 6.5.4** (Electron 31.7.7, TXT 4.0). Block ids and generator output are a
+snapshot of that build; re-export with `bridge/dumpblocks.js` after an upgrade.
+
 Generate, validate and drive **fischertechnik ROBO Pro Coding** projects (`.ft`) from Python.
 A `.ft` file is a ZIP of JSON metadata, Blockly XML and Python — so a robot program can be
 produced, diffed and tested like source code.
@@ -78,7 +81,7 @@ Both are encoded in `src/ftgateway/blocks.py` and enforced by `ftg verify`.
 
 | layer | evidence |
 |---|---|
-| container / metadata | unit tests, extract→pack round-trip |
+| container / metadata | unit tests, extract→pack round-trip (app 6.5.4) |
 | block XML | parsed by the app's own Blockly inside the running process |
 | generated Python | produced by the app's `pythonGenerator` |
 | hardware | TXT 4.0: motor turns on M1, LED blinks on M1 |

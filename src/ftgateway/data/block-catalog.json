@@ -1,4 +1,6 @@
 {
+  "appVersion": "6.5.4",
+  "appBuild": "Electron 31.7.7, TXT 4.0",
   "source": "C:\\Users\\MINT\\AppData\\Local\\Programs\\ROBOProCoding-zh\\app\\resources\\app.asar",
   "bundle": "client/www/main.8d48ca5265ad6ca1.js",
   "description": "ROBO Pro Coding 官方 Blockly 块类型 / 硬件实例类型 / 字段名常量（自动提取）",
